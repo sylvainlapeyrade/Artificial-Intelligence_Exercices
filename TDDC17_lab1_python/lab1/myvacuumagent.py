@@ -1,5 +1,4 @@
 from lab1.liuvacuum import *
-from random import randint
 
 DEBUG_OPT_DENSEWORLDMAP = False
 
@@ -101,9 +100,14 @@ class MyVacuumAgent(Agent):
     def __init__(self, world_width, world_height, log):
         super().__init__(self.execute)
         self.initial_random_actions = 10
-        self.iteration_counter = world_width * world_height * 2
+        self.iteration_counter = world_width * world_width * 5
         self.state = MyAgentState(world_width, world_height)
         self.log = log
+
+        # *** OUR CUSTOM VARIABLES ***
+        self.direction_stack = []
+        self.direction_home_stack = []
+        self.home_found = False
 
     def move_to_random_start_position(self, bump):
         action = random()
@@ -175,9 +179,9 @@ class MyVacuumAgent(Agent):
 
             # Mark the tile at the offset from the agent as a wall
             #  (since the agent bumped into it)
-            self.state.update_world(self.state.pos_x + offset[0],
-                                    self.state.pos_y + offset[1],
-                                    AGENT_STATE_WALL)
+            self.state.update_world(
+                self.state.pos_x + offset[0],
+                self.state.pos_y + offset[1], AGENT_STATE_WALL)
 
         # Update perceived state of current tile
         if dirt:
@@ -190,45 +194,176 @@ class MyVacuumAgent(Agent):
         # Debug
         self.state.print_world_debug()
 
-        def map_discovered():
-            for i in range(len(self.state.world)):
-                for j in range(len(self.state.world[i])):
-                    if self.state.world[i][j] == 0:
-                        return False
-            return True
+        # *************************************************
+        # *********** OUR ADDITIONS START HERE ************
+        # It is an implementation of Depth-First Algorithm
+        #     The queue has been modeled with a stack
+        # *************************************************
 
-        def forward_cell_discovered():
+        # Generic method to know if a pile have been visited or not
+        def is_pile_visited(pile):
+            if pile is AGENT_STATE_UNKNOWN or pile is AGENT_STATE_HOME:
+                return False
+            else:
+                return True
+
+        # Test if the tile in front of the agent has been visited
+        def front_tile_visited():
             if self.state.direction == AGENT_DIRECTION_EAST:
-                if self.state.world[self.state.pos_x + 1][self.state.pos_y] == 0:
-                    return False
+                return is_pile_visited(
+                    self.state.world[self.state.pos_x + 1][self.state.pos_y])
             elif self.state.direction == AGENT_DIRECTION_SOUTH:
-                if self.state.world[self.state.pos_x][self.state.pos_y + 1] == 0:
-                    return False
+                return is_pile_visited(
+                    self.state.world[self.state.pos_x][self.state.pos_y + 1])
             elif self.state.direction == AGENT_DIRECTION_WEST:
-                if self.state.world[self.state.pos_x - 1][self.state.pos_y] == 0:
-                    return False
+                return is_pile_visited(
+                    self.state.world[self.state.pos_x - 1][self.state.pos_y])
             elif self.state.direction == AGENT_DIRECTION_NORTH:
-                if self.state.world[self.state.pos_x][self.state.pos_y - 1] == 0:
-                    return False
+                return is_pile_visited(
+                    self.state.world[self.state.pos_x][self.state.pos_y - 1])
+            return False
 
-        if map_discovered():
+        # Test if the tile at the right of the agent has been visited
+        def right_tile_visited():
+            if self.state.direction == AGENT_DIRECTION_EAST:
+                return is_pile_visited(
+                    self.state.world[self.state.pos_x][self.state.pos_y + 1])
+            elif self.state.direction == AGENT_DIRECTION_SOUTH:
+                return is_pile_visited(
+                    self.state.world[self.state.pos_x - 1][self.state.pos_y])
+            elif self.state.direction == AGENT_DIRECTION_WEST:
+                return is_pile_visited(
+                    self.state.world[self.state.pos_x][self.state.pos_y - 1])
+            elif self.state.direction == AGENT_DIRECTION_NORTH:
+                return is_pile_visited(
+                    self.state.world[self.state.pos_x + 1][self.state.pos_y])
+            return False
+
+        # Test if the tile at the left of the agent has been visited
+        def left_tile_visited():
+            if self.state.direction == AGENT_DIRECTION_EAST:
+                return is_pile_visited(
+                    self.state.world[self.state.pos_x][self.state.pos_y - 1])
+            elif self.state.direction == AGENT_DIRECTION_SOUTH:
+                return is_pile_visited(
+                    self.state.world[self.state.pos_x + 1][self.state.pos_y])
+            elif self.state.direction == AGENT_DIRECTION_WEST:
+                return is_pile_visited(
+                    self.state.world[self.state.pos_x][self.state.pos_y + 1])
+            elif self.state.direction == AGENT_DIRECTION_NORTH:
+                return is_pile_visited(
+                    self.state.world[self.state.pos_x - 1][self.state.pos_y])
+            return False
+
+        # Make the agent move forward from his direction
+        def agent_go_forward():
+            self.state.last_action = ACTION_FORWARD
+            return ACTION_FORWARD
+
+        # Make the agent turn right from his direction
+        def agent_turn_right():
+            self.state.direction = (self.state.direction + 1) % 4
+            self.state.last_action = ACTION_TURN_RIGHT
+            return ACTION_TURN_RIGHT
+
+        # Make the agent turn right from his direction
+        def agent_turn_left():
+            self.state.direction = (self.state.direction + 3) % 4
+            self.state.last_action = ACTION_TURN_LEFT
+            return ACTION_TURN_LEFT
+
+        # Return the opposed direction from the agent
+        def opposed_direction(direction):
+            if direction is AGENT_DIRECTION_SOUTH:
+                return AGENT_DIRECTION_NORTH
+            elif direction is AGENT_DIRECTION_NORTH:
+                return AGENT_DIRECTION_SOUTH
+            elif direction is AGENT_DIRECTION_EAST:
+                return AGENT_DIRECTION_WEST
+            elif direction is AGENT_DIRECTION_WEST:
+                return AGENT_DIRECTION_EAST
+
+        # If the opposed direction of the agent is right :
+        #   It makes it turn right, otherwise it turns left
+        def agent_turn_back(opposed_direction):
+            if (opposed_direction == AGENT_DIRECTION_EAST and
+                self.state.direction == AGENT_DIRECTION_NORTH) or \
+                (opposed_direction == AGENT_DIRECTION_NORTH and
+                    self.state.direction == AGENT_DIRECTION_WEST) or \
+                (opposed_direction == AGENT_DIRECTION_WEST and
+                    self.state.direction == AGENT_DIRECTION_SOUTH) or \
+                (opposed_direction == AGENT_DIRECTION_SOUTH and
+                    self.state.direction == AGENT_DIRECTION_EAST):
+                return agent_turn_right()
+            else:
+                return agent_turn_left()
+
+        # Make the agent go back from where it started
+        def agent_go_back():
+            direction = self.direction_stack[-1]
+            if self.state.direction == opposed_direction(direction):
+                self.direction_stack.pop()
+                return agent_go_forward()
+            else:
+                return agent_turn_back(opposed_direction(direction))
+
+        # Make the agent go back the home position once he encoutered it
+        def agent_go_back_home():
+            direction = self.direction_home_stack[-1]
+            if self.state.direction == opposed_direction(direction):
+                self.direction_home_stack.pop()
+                return agent_go_forward()
+            else:
+                return agent_turn_back(opposed_direction(direction))
+
+        # Stop the agent and informs the simulator the cleaning is finished
+        def cleaning_done():
+            self.iteration_counter = 0  # Does not stop without setting
+            # iteration_counter to 0, might be a bug since it works on java
             self.state.last_action = ACTION_NOP
             return ACTION_NOP
+
+        #  Decide action
+        if dirt:
+            self.log("DIRT -> choosing SUCK action!")
+            self.state.last_action = ACTION_SUCK
+            return ACTION_SUCK
         else:
-            # Decide action
-            if dirt:
-                self.log("DIRT -> choosing SUCK action!")
-                self.state.last_action = ACTION_SUCK
-                return ACTION_SUCK
-            elif bump:
-                self.log("BUMP -> choosing TURN_LEFT action!")
-                self.state.last_action = ACTION_TURN_LEFT
-                self.state.direction = (self.state.direction + 3) % 4
-                return ACTION_TURN_LEFT
-                # self.log("BUMP -> choosing TURN_RIGHT action!")
-                # self.state.direction = (self.state.direction + 1) % 4
-                # self.state.last_action = ACTION_TURN_RIGHT
-                # return ACTION_TURN_RIGHT
+            # If first at home position, home_found = True
+            if self.state.pos_x == 1 and self.state.pos_y == 1:
+                if self.home_found is False:
+                    self.home_found = True
+            # Remove the last direction from the stacks as
+            # we don't want to store bumps
+            if bump:
+                if len(self.direction_stack) > 0:
+                    self.direction_stack.pop()
+                if len(self.direction_home_stack) > 0:
+                    self.direction_home_stack.pop()
+            # Add direction of front tiles to the stacks if not visited
+            if front_tile_visited() is False:
+                self.direction_stack.append(self.state.direction)
+                # Add direction only once the home is visited
+                if self.home_found is True:
+                    self.direction_home_stack.append(self.state.direction)
+                return agent_go_forward()
+            # Else if one of the side tiles is not visited: turn
+            elif left_tile_visited() is False:
+                return agent_turn_left()
+            elif right_tile_visited() is False:
+                return agent_turn_right()
+
+            # If agent at home positon, and direction_stack empty,
+            # then the agent has to have visited all tiles (DFS)
+            if self.state.pos_x == 1 and self.state.pos_y == 1:
+                if len(self.direction_stack) < 1:
+                    cleaning_done()
+
+            if len(self.direction_stack) > 0:
+                return agent_go_back()
+            elif len(self.direction_home_stack) > 0:
+                return agent_go_back_home()
             else:
-                self.state.last_action = ACTION_FORWARD
-                return ACTION_FORWARD
+                self.iteration_counter = 0
+                self.state.last_action = ACTION_NOP
+                return ACTION_NOP
