@@ -1,6 +1,7 @@
+
 ;Header and description
 
-(define (domain domain_name)
+(define (domain shakey)
 
 ;remove requirements that are not needed
 (:requirements :strips :fluents :durative-actions :timed-initial-literals :typing :conditional-effects :negative-preconditions :duration-inequalities :equality)
