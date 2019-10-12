@@ -1,0 +1,1303 @@
+{"act": "begin_group", "ts": 0}
+{"act": "open_list_sorting", "key_list": ["h_SINGLE", "h_(", "h_ff", "h_INSERTION_ORDER", "h_)"]}
+{"ts":0, "act": "state_update", "state_id": 0, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "g": -1, "real_g": -1}
+{"ts": 0, "act": "evaluated_states", "state_id": 0, "preferred": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 0}
+{"ts":0, "act": "state_update", "state_id": 0, "h_ff": 9}
+{"ts": 0, "act": "evaluated_heuristics", "count": 1}
+{"act": "preferred_heuristics", "key_list": []}
+{"act": "main_heuristic", "target": "h_ff"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 1}
+{"ts":1, "act": "state_update", "state_id": 0, "g": 0, "real_g": 0}
+{"ts": 1, "act": "expanded_states", "state_id": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 1}
+{"ts":1, "act": "state_update", "state_id": 1, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [0, "climb_box shakey box room1", 1]}
+{"ts": 1, "act": "generated_states", "state_id": 0, "op": "climb_box shakey box room1"}
+{"ts":1, "act": "state_update", "state_id": 1, "g": -1, "real_g": -1}
+{"ts": 1, "act": "evaluated_states", "state_id": 1, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 1}
+{"ts":1, "act": "state_update", "state_id": 1, "h_ff": 9}
+{"ts": 1, "act": "evaluated_heuristics", "count": 1}
+{"ts":1, "act": "state_update", "state_id": 2, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [0, "push_box shakey box room1 room2 door2", 1]}
+{"ts": 1, "act": "generated_states", "state_id": 0, "op": "push_box shakey box room1 room2 door2"}
+{"ts":1, "act": "state_update", "state_id": 2, "g": -1, "real_g": -1}
+{"ts": 1, "act": "evaluated_states", "state_id": 2, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 1}
+{"ts":1, "act": "state_update", "state_id": 2, "h_ff": 9}
+{"ts": 1, "act": "evaluated_heuristics", "count": 1}
+{"ts":1, "act": "state_update", "state_id": 3, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [0, "move_room shakey room1 room2 door1", 1]}
+{"ts": 1, "act": "generated_states", "state_id": 0, "op": "move_room shakey room1 room2 door1"}
+{"ts":1, "act": "state_update", "state_id": 3, "g": -1, "real_g": -1}
+{"ts": 1, "act": "evaluated_states", "state_id": 3, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 1}
+{"ts":1, "act": "state_update", "state_id": 3, "h_ff": 9}
+{"ts": 1, "act": "evaluated_heuristics", "count": 1}
+{"ts": 1, "act": "generated_states", "state_id": 0, "op": "move_room shakey room1 room2 door2"}
+{"ts":1, "act": "state_update", "state_id": 3, "g": 1, "real_g": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 2}
+{"ts":2, "act": "state_update", "state_id": 1, "g": 1, "real_g": 1}
+{"ts": 2, "act": "expanded_states", "state_id": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 2}
+{"ts":2, "act": "state_update", "state_id": 0, "new_parent": [1, "descend_box shakey box room1", 1]}
+{"ts": 2, "act": "generated_states", "state_id": 1, "op": "descend_box shakey box room1"}
+{"ts":2, "act": "state_update", "state_id": 4, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [1, "push_box shakey box room1 room2 door2", 1]}
+{"ts": 2, "act": "generated_states", "state_id": 1, "op": "push_box shakey box room1 room2 door2"}
+{"ts":2, "act": "state_update", "state_id": 4, "g": -1, "real_g": -1}
+{"ts": 2, "act": "evaluated_states", "state_id": 4, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 2}
+{"ts":2, "act": "state_update", "state_id": 4, "h_ff": 9}
+{"ts": 2, "act": "evaluated_heuristics", "count": 1}
+{"ts": 2, "act": "generated_states", "state_id": 1, "op": "descend_box shakey lightswitch1 room1"}
+{"ts": 2, "act": "generated_states", "state_id": 1, "op": "descend_box shakey shakey room1"}
+{"ts":2, "act": "state_update", "state_id": 5, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "0(Atom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [1, "turn_on_light shakey lightswitch1 room1", 1]}
+{"ts": 2, "act": "generated_states", "state_id": 1, "op": "turn_on_light shakey lightswitch1 room1"}
+{"ts":2, "act": "state_update", "state_id": 5, "g": -1, "real_g": -1}
+{"ts": 2, "act": "evaluated_states", "state_id": 5, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 2}
+{"ts":2, "act": "state_update", "state_id": 5, "h_ff": 9}
+{"ts": 2, "act": "evaluated_heuristics", "count": 1}
+{"ts": 2, "act": "generated_states", "state_id": 1, "op": "descend_box shakey toy1 room1"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 3}
+{"ts":3, "act": "state_update", "state_id": 2, "g": 1, "real_g": 1}
+{"ts": 3, "act": "expanded_states", "state_id": 2}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 3}
+{"ts":3, "act": "state_update", "state_id": 4, "new_parent": [2, "climb_box shakey box room2", 1]}
+{"ts": 3, "act": "generated_states", "state_id": 2, "op": "climb_box shakey box room2"}
+{"ts":3, "act": "state_update", "state_id": 4, "g": 2, "real_g": 2}
+{"ts":3, "act": "state_update", "state_id": 0, "new_parent": [2, "push_box shakey box room2 room1 door2", 1]}
+{"ts": 3, "act": "generated_states", "state_id": 2, "op": "push_box shakey box room2 room1 door2"}
+{"ts":3, "act": "state_update", "state_id": 6, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [2, "push_box shakey box room2 room3 door3", 1]}
+{"ts": 3, "act": "generated_states", "state_id": 2, "op": "push_box shakey box room2 room3 door3"}
+{"ts":3, "act": "state_update", "state_id": 6, "g": -1, "real_g": -1}
+{"ts": 3, "act": "evaluated_states", "state_id": 6, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 3}
+{"ts":3, "act": "state_update", "state_id": 6, "h_ff": 9}
+{"ts": 3, "act": "evaluated_heuristics", "count": 1}
+{"ts":3, "act": "state_update", "state_id": 7, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [2, "move_room shakey room2 room1 door1", 1]}
+{"ts": 3, "act": "generated_states", "state_id": 2, "op": "move_room shakey room2 room1 door1"}
+{"ts":3, "act": "state_update", "state_id": 7, "g": -1, "real_g": -1}
+{"ts": 3, "act": "evaluated_states", "state_id": 7, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 3}
+{"ts":3, "act": "state_update", "state_id": 7, "h_ff": 9}
+{"ts": 3, "act": "evaluated_heuristics", "count": 1}
+{"ts": 3, "act": "generated_states", "state_id": 2, "op": "move_room shakey room2 room1 door2"}
+{"ts":3, "act": "state_update", "state_id": 7, "g": 2, "real_g": 2}
+{"ts":3, "act": "state_update", "state_id": 8, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [2, "move_room shakey room2 room3 door3", 1]}
+{"ts": 3, "act": "generated_states", "state_id": 2, "op": "move_room shakey room2 room3 door3"}
+{"ts":3, "act": "state_update", "state_id": 8, "g": -1, "real_g": -1}
+{"ts": 3, "act": "evaluated_states", "state_id": 8, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 3}
+{"ts":3, "act": "state_update", "state_id": 8, "h_ff": 9}
+{"ts": 3, "act": "evaluated_heuristics", "count": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 4}
+{"ts": 4, "act": "expanded_states", "state_id": 3}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 4}
+{"ts":4, "act": "state_update", "state_id": 0, "new_parent": [3, "move_room shakey room2 room1 door1", 1]}
+{"ts": 4, "act": "generated_states", "state_id": 3, "op": "move_room shakey room2 room1 door1"}
+{"ts": 4, "act": "generated_states", "state_id": 3, "op": "move_room shakey room2 room1 door2"}
+{"ts":4, "act": "state_update", "state_id": 9, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [3, "move_room shakey room2 room3 door3", 1]}
+{"ts": 4, "act": "generated_states", "state_id": 3, "op": "move_room shakey room2 room3 door3"}
+{"ts":4, "act": "state_update", "state_id": 9, "g": -1, "real_g": -1}
+{"ts": 4, "act": "evaluated_states", "state_id": 9, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 4}
+{"ts":4, "act": "state_update", "state_id": 9, "h_ff": 9}
+{"ts": 4, "act": "evaluated_heuristics", "count": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 5}
+{"ts": 5, "act": "expanded_states", "state_id": 4}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 5}
+{"ts":5, "act": "state_update", "state_id": 2, "new_parent": [4, "descend_box shakey box room2", 1]}
+{"ts": 5, "act": "generated_states", "state_id": 4, "op": "descend_box shakey box room2"}
+{"ts":5, "act": "state_update", "state_id": 1, "new_parent": [4, "push_box shakey box room2 room1 door2", 1]}
+{"ts": 5, "act": "generated_states", "state_id": 4, "op": "push_box shakey box room2 room1 door2"}
+{"ts":5, "act": "state_update", "state_id": 10, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [4, "push_box shakey box room2 room3 door3", 1]}
+{"ts": 5, "act": "generated_states", "state_id": 4, "op": "push_box shakey box room2 room3 door3"}
+{"ts":5, "act": "state_update", "state_id": 10, "g": -1, "real_g": -1}
+{"ts": 5, "act": "evaluated_states", "state_id": 10, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 5}
+{"ts":5, "act": "state_update", "state_id": 10, "h_ff": 9}
+{"ts": 5, "act": "evaluated_heuristics", "count": 1}
+{"ts": 5, "act": "generated_states", "state_id": 4, "op": "descend_box shakey lightswitch2 room2"}
+{"ts": 5, "act": "generated_states", "state_id": 4, "op": "descend_box shakey shakey room2"}
+{"ts":5, "act": "state_update", "state_id": 11, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [4, "turn_on_light shakey lightswitch2 room2", 1]}
+{"ts": 5, "act": "generated_states", "state_id": 4, "op": "turn_on_light shakey lightswitch2 room2"}
+{"ts":5, "act": "state_update", "state_id": 11, "g": -1, "real_g": -1}
+{"ts": 5, "act": "evaluated_states", "state_id": 11, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 5}
+{"ts":5, "act": "state_update", "state_id": 11, "h_ff": 9}
+{"ts": 5, "act": "evaluated_heuristics", "count": 1}
+{"ts": 5, "act": "generated_states", "state_id": 4, "op": "descend_box shakey toy2 room2"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 6}
+{"ts":6, "act": "state_update", "state_id": 5, "g": 2, "real_g": 2}
+{"ts": 6, "act": "expanded_states", "state_id": 5}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 6}
+{"ts":6, "act": "state_update", "state_id": 12, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "0(Atom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [5, "descend_box shakey box room1", 1]}
+{"ts": 6, "act": "generated_states", "state_id": 5, "op": "descend_box shakey box room1"}
+{"ts":6, "act": "state_update", "state_id": 12, "g": -1, "real_g": -1}
+{"ts": 6, "act": "evaluated_states", "state_id": 12, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 6}
+{"ts":6, "act": "state_update", "state_id": 12, "h_ff": 9}
+{"ts": 6, "act": "evaluated_heuristics", "count": 1}
+{"ts":6, "act": "state_update", "state_id": 13, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "0(Atom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [5, "push_box shakey box room1 room2 door2", 1]}
+{"ts": 6, "act": "generated_states", "state_id": 5, "op": "push_box shakey box room1 room2 door2"}
+{"ts":6, "act": "state_update", "state_id": 13, "g": -1, "real_g": -1}
+{"ts": 6, "act": "evaluated_states", "state_id": 13, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 6}
+{"ts":6, "act": "state_update", "state_id": 13, "h_ff": 9}
+{"ts": 6, "act": "evaluated_heuristics", "count": 1}
+{"ts": 6, "act": "generated_states", "state_id": 5, "op": "descend_box shakey lightswitch1 room1"}
+{"ts":6, "act": "state_update", "state_id": 12, "g": 3, "real_g": 3}
+{"ts": 6, "act": "generated_states", "state_id": 5, "op": "descend_box shakey shakey room1"}
+{"ts":6, "act": "state_update", "state_id": 1, "new_parent": [5, "turn_off_light shakey lightswitch1 room1", 1]}
+{"ts": 6, "act": "generated_states", "state_id": 5, "op": "turn_off_light shakey lightswitch1 room1"}
+{"ts": 6, "act": "generated_states", "state_id": 5, "op": "descend_box shakey toy1 room1"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 7}
+{"ts":7, "act": "state_update", "state_id": 6, "g": 2, "real_g": 2}
+{"ts": 7, "act": "expanded_states", "state_id": 6}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 7}
+{"ts":7, "act": "state_update", "state_id": 10, "new_parent": [6, "climb_box shakey box room3", 1]}
+{"ts": 7, "act": "generated_states", "state_id": 6, "op": "climb_box shakey box room3"}
+{"ts":7, "act": "state_update", "state_id": 10, "g": 3, "real_g": 3}
+{"ts":7, "act": "state_update", "state_id": 2, "new_parent": [6, "push_box shakey box room3 room2 door3", 1]}
+{"ts": 7, "act": "generated_states", "state_id": 6, "op": "push_box shakey box room3 room2 door3"}
+{"ts":7, "act": "state_update", "state_id": 14, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [6, "move_room shakey room3 room2 door3", 1]}
+{"ts": 7, "act": "generated_states", "state_id": 6, "op": "move_room shakey room3 room2 door3"}
+{"ts":7, "act": "state_update", "state_id": 14, "g": -1, "real_g": -1}
+{"ts": 7, "act": "evaluated_states", "state_id": 14, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 7}
+{"ts":7, "act": "state_update", "state_id": 14, "h_ff": 9}
+{"ts": 7, "act": "evaluated_heuristics", "count": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 8}
+{"ts": 8, "act": "expanded_states", "state_id": 7}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 8}
+{"ts":8, "act": "state_update", "state_id": 2, "new_parent": [7, "move_room shakey room1 room2 door1", 1]}
+{"ts": 8, "act": "generated_states", "state_id": 7, "op": "move_room shakey room1 room2 door1"}
+{"ts": 8, "act": "generated_states", "state_id": 7, "op": "move_room shakey room1 room2 door2"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 9}
+{"ts":9, "act": "state_update", "state_id": 8, "g": 2, "real_g": 2}
+{"ts": 9, "act": "expanded_states", "state_id": 8}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 9}
+{"ts":9, "act": "state_update", "state_id": 2, "new_parent": [8, "move_room shakey room3 room2 door3", 1]}
+{"ts": 9, "act": "generated_states", "state_id": 8, "op": "move_room shakey room3 room2 door3"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 10}
+{"ts":10, "act": "state_update", "state_id": 9, "g": 2, "real_g": 2}
+{"ts": 10, "act": "expanded_states", "state_id": 9}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 10}
+{"ts":10, "act": "state_update", "state_id": 3, "new_parent": [9, "move_room shakey room3 room2 door3", 1]}
+{"ts": 10, "act": "generated_states", "state_id": 9, "op": "move_room shakey room3 room2 door3"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 11}
+{"ts": 11, "act": "expanded_states", "state_id": 10}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 11}
+{"ts":11, "act": "state_update", "state_id": 6, "new_parent": [10, "descend_box shakey box room3", 1]}
+{"ts": 11, "act": "generated_states", "state_id": 10, "op": "descend_box shakey box room3"}
+{"ts":11, "act": "state_update", "state_id": 4, "new_parent": [10, "push_box shakey box room3 room2 door3", 1]}
+{"ts": 11, "act": "generated_states", "state_id": 10, "op": "push_box shakey box room3 room2 door3"}
+{"ts": 11, "act": "generated_states", "state_id": 10, "op": "descend_box shakey lightswitch3 room3"}
+{"ts": 11, "act": "generated_states", "state_id": 10, "op": "descend_box shakey shakey room3"}
+{"ts":11, "act": "state_update", "state_id": 15, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "0(Atom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [10, "turn_on_light shakey lightswitch3 room3", 1]}
+{"ts": 11, "act": "generated_states", "state_id": 10, "op": "turn_on_light shakey lightswitch3 room3"}
+{"ts":11, "act": "state_update", "state_id": 15, "g": -1, "real_g": -1}
+{"ts": 11, "act": "evaluated_states", "state_id": 15, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 11}
+{"ts":11, "act": "state_update", "state_id": 15, "h_ff": 10}
+{"ts": 11, "act": "evaluated_heuristics", "count": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 12}
+{"ts":12, "act": "state_update", "state_id": 11, "g": 3, "real_g": 3}
+{"ts": 12, "act": "expanded_states", "state_id": 11}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 12}
+{"ts":12, "act": "state_update", "state_id": 16, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [11, "descend_box shakey box room2", 1]}
+{"ts": 12, "act": "generated_states", "state_id": 11, "op": "descend_box shakey box room2"}
+{"ts":12, "act": "state_update", "state_id": 16, "g": -1, "real_g": -1}
+{"ts": 12, "act": "evaluated_states", "state_id": 16, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 12}
+{"ts":12, "act": "state_update", "state_id": 16, "h_ff": 9}
+{"ts": 12, "act": "evaluated_heuristics", "count": 1}
+{"ts":12, "act": "state_update", "state_id": 17, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [11, "push_box shakey box room2 room1 door2", 1]}
+{"ts": 12, "act": "generated_states", "state_id": 11, "op": "push_box shakey box room2 room1 door2"}
+{"ts":12, "act": "state_update", "state_id": 17, "g": -1, "real_g": -1}
+{"ts": 12, "act": "evaluated_states", "state_id": 17, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 12}
+{"ts":12, "act": "state_update", "state_id": 17, "h_ff": 9}
+{"ts": 12, "act": "evaluated_heuristics", "count": 1}
+{"ts":12, "act": "state_update", "state_id": 18, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [11, "push_box shakey box room2 room3 door3", 1]}
+{"ts": 12, "act": "generated_states", "state_id": 11, "op": "push_box shakey box room2 room3 door3"}
+{"ts":12, "act": "state_update", "state_id": 18, "g": -1, "real_g": -1}
+{"ts": 12, "act": "evaluated_states", "state_id": 18, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 12}
+{"ts":12, "act": "state_update", "state_id": 18, "h_ff": 9}
+{"ts": 12, "act": "evaluated_heuristics", "count": 1}
+{"ts": 12, "act": "generated_states", "state_id": 11, "op": "descend_box shakey lightswitch2 room2"}
+{"ts":12, "act": "state_update", "state_id": 16, "g": 4, "real_g": 4}
+{"ts": 12, "act": "generated_states", "state_id": 11, "op": "descend_box shakey shakey room2"}
+{"ts":12, "act": "state_update", "state_id": 4, "new_parent": [11, "turn_off_light shakey lightswitch2 room2", 1]}
+{"ts": 12, "act": "generated_states", "state_id": 11, "op": "turn_off_light shakey lightswitch2 room2"}
+{"ts": 12, "act": "generated_states", "state_id": 11, "op": "descend_box shakey toy2 room2"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 13}
+{"ts": 13, "act": "expanded_states", "state_id": 12}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 13}
+{"ts":13, "act": "state_update", "state_id": 5, "new_parent": [12, "climb_box shakey box room1", 1]}
+{"ts": 13, "act": "generated_states", "state_id": 12, "op": "climb_box shakey box room1"}
+{"ts":13, "act": "state_update", "state_id": 19, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "0(Atom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [12, "push_box shakey box room1 room2 door2", 1]}
+{"ts": 13, "act": "generated_states", "state_id": 12, "op": "push_box shakey box room1 room2 door2"}
+{"ts":13, "act": "state_update", "state_id": 19, "g": -1, "real_g": -1}
+{"ts": 13, "act": "evaluated_states", "state_id": 19, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 13}
+{"ts":13, "act": "state_update", "state_id": 19, "h_ff": 9}
+{"ts": 13, "act": "evaluated_heuristics", "count": 1}
+{"ts":13, "act": "state_update", "state_id": 20, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "0(Atom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [12, "pick_object shakey toy1 gripper1 room1 lightswitch1", 1]}
+{"ts": 13, "act": "generated_states", "state_id": 12, "op": "pick_object shakey toy1 gripper1 room1 lightswitch1"}
+{"ts":13, "act": "state_update", "state_id": 20, "g": -1, "real_g": -1}
+{"ts": 13, "act": "evaluated_states", "state_id": 20, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 13}
+{"ts":13, "act": "state_update", "state_id": 20, "h_ff": 8}
+{"ts": 13, "act": "evaluated_heuristics", "count": 1}
+{"ts":13, "act": "state_update", "state_id": 21, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "1(NegatedAtom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "0(Atom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "4(Atom is_object_gripped(toy1, gripper2))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [12, "pick_object shakey toy1 gripper2 room1 lightswitch1", 1]}
+{"ts": 13, "act": "generated_states", "state_id": 12, "op": "pick_object shakey toy1 gripper2 room1 lightswitch1"}
+{"ts":13, "act": "state_update", "state_id": 21, "g": -1, "real_g": -1}
+{"ts": 13, "act": "evaluated_states", "state_id": 21, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 13}
+{"ts":13, "act": "state_update", "state_id": 21, "h_ff": 8}
+{"ts": 13, "act": "evaluated_heuristics", "count": 1}
+{"ts":13, "act": "state_update", "state_id": 22, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "0(Atom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "0(Atom is_in(toy1, room1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [12, "move_room shakey room1 room2 door1", 1]}
+{"ts": 13, "act": "generated_states", "state_id": 12, "op": "move_room shakey room1 room2 door1"}
+{"ts":13, "act": "state_update", "state_id": 22, "g": -1, "real_g": -1}
+{"ts": 13, "act": "evaluated_states", "state_id": 22, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 13}
+{"ts":13, "act": "state_update", "state_id": 22, "h_ff": 9}
+{"ts": 13, "act": "evaluated_heuristics", "count": 1}
+{"ts": 13, "act": "generated_states", "state_id": 12, "op": "move_room shakey room1 room2 door2"}
+{"ts":13, "act": "state_update", "state_id": 22, "g": 4, "real_g": 4}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 14}
+{"ts":14, "act": "state_update", "state_id": 20, "g": 4, "real_g": 4}
+{"ts": 14, "act": "expanded_states", "state_id": 20}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 14}
+{"ts":14, "act": "state_update", "state_id": 23, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "0(Atom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "0(Atom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [20, "climb_box shakey box room1", 1]}
+{"ts": 14, "act": "generated_states", "state_id": 20, "op": "climb_box shakey box room1"}
+{"ts":14, "act": "state_update", "state_id": 23, "g": -1, "real_g": -1}
+{"ts": 14, "act": "evaluated_states", "state_id": 23, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 14}
+{"ts":14, "act": "state_update", "state_id": 23, "h_ff": 8}
+{"ts": 14, "act": "evaluated_heuristics", "count": 1}
+{"ts":14, "act": "state_update", "state_id": 24, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "0(Atom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [20, "push_box shakey box room1 room2 door2", 1]}
+{"ts": 14, "act": "generated_states", "state_id": 20, "op": "push_box shakey box room1 room2 door2"}
+{"ts":14, "act": "state_update", "state_id": 24, "g": -1, "real_g": -1}
+{"ts": 14, "act": "evaluated_states", "state_id": 24, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 14}
+{"ts":14, "act": "state_update", "state_id": 24, "h_ff": 8}
+{"ts": 14, "act": "evaluated_heuristics", "count": 1}
+{"ts":14, "act": "state_update", "state_id": 25, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "0(Atom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [20, "move_room shakey room1 room2 door1", 1]}
+{"ts": 14, "act": "generated_states", "state_id": 20, "op": "move_room shakey room1 room2 door1"}
+{"ts":14, "act": "state_update", "state_id": 25, "g": -1, "real_g": -1}
+{"ts": 14, "act": "evaluated_states", "state_id": 25, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 14}
+{"ts":14, "act": "state_update", "state_id": 25, "h_ff": 8}
+{"ts": 14, "act": "evaluated_heuristics", "count": 1}
+{"ts": 14, "act": "generated_states", "state_id": 20, "op": "move_room shakey room1 room2 door2"}
+{"ts":14, "act": "state_update", "state_id": 25, "g": 5, "real_g": 5}
+{"ts":14, "act": "state_update", "state_id": 12, "new_parent": [20, "drop_object shakey toy1 gripper1 room1", 1]}
+{"ts": 14, "act": "generated_states", "state_id": 20, "op": "drop_object shakey toy1 gripper1 room1"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 15}
+{"ts":15, "act": "state_update", "state_id": 21, "g": 4, "real_g": 4}
+{"ts": 15, "act": "expanded_states", "state_id": 21}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 15}
+{"ts":15, "act": "state_update", "state_id": 26, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "1(NegatedAtom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "0(Atom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "4(Atom is_object_gripped(toy1, gripper2))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [21, "climb_box shakey box room1", 1]}
+{"ts": 15, "act": "generated_states", "state_id": 21, "op": "climb_box shakey box room1"}
+{"ts":15, "act": "state_update", "state_id": 26, "g": -1, "real_g": -1}
+{"ts": 15, "act": "evaluated_states", "state_id": 26, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 15}
+{"ts":15, "act": "state_update", "state_id": 26, "h_ff": 8}
+{"ts": 15, "act": "evaluated_heuristics", "count": 1}
+{"ts":15, "act": "state_update", "state_id": 27, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "1(NegatedAtom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "0(Atom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "4(Atom is_object_gripped(toy1, gripper2))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [21, "push_box shakey box room1 room2 door2", 1]}
+{"ts": 15, "act": "generated_states", "state_id": 21, "op": "push_box shakey box room1 room2 door2"}
+{"ts":15, "act": "state_update", "state_id": 27, "g": -1, "real_g": -1}
+{"ts": 15, "act": "evaluated_states", "state_id": 27, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 15}
+{"ts":15, "act": "state_update", "state_id": 27, "h_ff": 8}
+{"ts": 15, "act": "evaluated_heuristics", "count": 1}
+{"ts":15, "act": "state_update", "state_id": 28, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "1(NegatedAtom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "0(Atom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "4(Atom is_object_gripped(toy1, gripper2))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [21, "move_room shakey room1 room2 door1", 1]}
+{"ts": 15, "act": "generated_states", "state_id": 21, "op": "move_room shakey room1 room2 door1"}
+{"ts":15, "act": "state_update", "state_id": 28, "g": -1, "real_g": -1}
+{"ts": 15, "act": "evaluated_states", "state_id": 28, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 15}
+{"ts":15, "act": "state_update", "state_id": 28, "h_ff": 8}
+{"ts": 15, "act": "evaluated_heuristics", "count": 1}
+{"ts": 15, "act": "generated_states", "state_id": 21, "op": "move_room shakey room1 room2 door2"}
+{"ts":15, "act": "state_update", "state_id": 28, "g": 5, "real_g": 5}
+{"ts":15, "act": "state_update", "state_id": 12, "new_parent": [21, "drop_object shakey toy1 gripper2 room1", 1]}
+{"ts": 15, "act": "generated_states", "state_id": 21, "op": "drop_object shakey toy1 gripper2 room1"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 16}
+{"ts":16, "act": "state_update", "state_id": 23, "g": 5, "real_g": 5}
+{"ts": 16, "act": "expanded_states", "state_id": 23}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 16}
+{"ts":16, "act": "state_update", "state_id": 20, "new_parent": [23, "descend_box shakey box room1", 1]}
+{"ts": 16, "act": "generated_states", "state_id": 23, "op": "descend_box shakey box room1"}
+{"ts":16, "act": "state_update", "state_id": 29, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "0(Atom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "0(Atom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [23, "push_box shakey box room1 room2 door2", 1]}
+{"ts": 16, "act": "generated_states", "state_id": 23, "op": "push_box shakey box room1 room2 door2"}
+{"ts":16, "act": "state_update", "state_id": 29, "g": -1, "real_g": -1}
+{"ts": 16, "act": "evaluated_states", "state_id": 29, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 16}
+{"ts":16, "act": "state_update", "state_id": 29, "h_ff": 8}
+{"ts": 16, "act": "evaluated_heuristics", "count": 1}
+{"ts": 16, "act": "generated_states", "state_id": 23, "op": "descend_box shakey lightswitch1 room1"}
+{"ts": 16, "act": "generated_states", "state_id": 23, "op": "descend_box shakey shakey room1"}
+{"ts":16, "act": "state_update", "state_id": 30, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "0(Atom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [23, "turn_off_light shakey lightswitch1 room1", 1]}
+{"ts": 16, "act": "generated_states", "state_id": 23, "op": "turn_off_light shakey lightswitch1 room1"}
+{"ts":16, "act": "state_update", "state_id": 30, "g": -1, "real_g": -1}
+{"ts": 16, "act": "evaluated_states", "state_id": 30, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 16}
+{"ts":16, "act": "state_update", "state_id": 30, "h_ff": 7}
+{"ts": 16, "act": "evaluated_heuristics", "count": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 17}
+{"ts":17, "act": "state_update", "state_id": 30, "g": 6, "real_g": 6}
+{"ts": 17, "act": "expanded_states", "state_id": 30}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 17}
+{"ts":17, "act": "state_update", "state_id": 31, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [30, "descend_box shakey box room1", 1]}
+{"ts": 17, "act": "generated_states", "state_id": 30, "op": "descend_box shakey box room1"}
+{"ts":17, "act": "state_update", "state_id": 31, "g": -1, "real_g": -1}
+{"ts": 17, "act": "evaluated_states", "state_id": 31, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 17}
+{"ts":17, "act": "state_update", "state_id": 31, "h_ff": 7}
+{"ts": 17, "act": "evaluated_heuristics", "count": 1}
+{"ts":17, "act": "state_update", "state_id": 32, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "0(Atom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [30, "push_box shakey box room1 room2 door2", 1]}
+{"ts": 17, "act": "generated_states", "state_id": 30, "op": "push_box shakey box room1 room2 door2"}
+{"ts":17, "act": "state_update", "state_id": 32, "g": -1, "real_g": -1}
+{"ts": 17, "act": "evaluated_states", "state_id": 32, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 17}
+{"ts":17, "act": "state_update", "state_id": 32, "h_ff": 7}
+{"ts": 17, "act": "evaluated_heuristics", "count": 1}
+{"ts": 17, "act": "generated_states", "state_id": 30, "op": "descend_box shakey lightswitch1 room1"}
+{"ts":17, "act": "state_update", "state_id": 31, "g": 7, "real_g": 7}
+{"ts": 17, "act": "generated_states", "state_id": 30, "op": "descend_box shakey shakey room1"}
+{"ts":17, "act": "state_update", "state_id": 23, "new_parent": [30, "turn_on_light shakey lightswitch1 room1", 1]}
+{"ts": 17, "act": "generated_states", "state_id": 30, "op": "turn_on_light shakey lightswitch1 room1"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 18}
+{"ts": 18, "act": "expanded_states", "state_id": 31}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 18}
+{"ts":18, "act": "state_update", "state_id": 30, "new_parent": [31, "climb_box shakey box room1", 1]}
+{"ts": 18, "act": "generated_states", "state_id": 31, "op": "climb_box shakey box room1"}
+{"ts":18, "act": "state_update", "state_id": 33, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [31, "push_box shakey box room1 room2 door2", 1]}
+{"ts": 18, "act": "generated_states", "state_id": 31, "op": "push_box shakey box room1 room2 door2"}
+{"ts":18, "act": "state_update", "state_id": 33, "g": -1, "real_g": -1}
+{"ts": 18, "act": "evaluated_states", "state_id": 33, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 18}
+{"ts":18, "act": "state_update", "state_id": 33, "h_ff": 7}
+{"ts": 18, "act": "evaluated_heuristics", "count": 1}
+{"ts":18, "act": "state_update", "state_id": 34, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [31, "move_room shakey room1 room2 door1", 1]}
+{"ts": 18, "act": "generated_states", "state_id": 31, "op": "move_room shakey room1 room2 door1"}
+{"ts":18, "act": "state_update", "state_id": 34, "g": -1, "real_g": -1}
+{"ts": 18, "act": "evaluated_states", "state_id": 34, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 18}
+{"ts":18, "act": "state_update", "state_id": 34, "h_ff": 7}
+{"ts": 18, "act": "evaluated_heuristics", "count": 1}
+{"ts": 18, "act": "generated_states", "state_id": 31, "op": "move_room shakey room1 room2 door2"}
+{"ts":18, "act": "state_update", "state_id": 34, "g": 8, "real_g": 8}
+{"ts":18, "act": "state_update", "state_id": 0, "new_parent": [31, "drop_object shakey toy1 gripper1 room1", 1]}
+{"ts": 18, "act": "generated_states", "state_id": 31, "op": "drop_object shakey toy1 gripper1 room1"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 19}
+{"ts":19, "act": "state_update", "state_id": 32, "g": 7, "real_g": 7}
+{"ts": 19, "act": "expanded_states", "state_id": 32}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 19}
+{"ts":19, "act": "state_update", "state_id": 33, "new_parent": [32, "descend_box shakey box room2", 1]}
+{"ts": 19, "act": "generated_states", "state_id": 32, "op": "descend_box shakey box room2"}
+{"ts":19, "act": "state_update", "state_id": 33, "g": 8, "real_g": 8}
+{"ts":19, "act": "state_update", "state_id": 30, "new_parent": [32, "push_box shakey box room2 room1 door2", 1]}
+{"ts": 19, "act": "generated_states", "state_id": 32, "op": "push_box shakey box room2 room1 door2"}
+{"ts":19, "act": "state_update", "state_id": 35, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "0(Atom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [32, "push_box shakey box room2 room3 door3", 1]}
+{"ts": 19, "act": "generated_states", "state_id": 32, "op": "push_box shakey box room2 room3 door3"}
+{"ts":19, "act": "state_update", "state_id": 35, "g": -1, "real_g": -1}
+{"ts": 19, "act": "evaluated_states", "state_id": 35, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 19}
+{"ts":19, "act": "state_update", "state_id": 35, "h_ff": 7}
+{"ts": 19, "act": "evaluated_heuristics", "count": 1}
+{"ts": 19, "act": "generated_states", "state_id": 32, "op": "descend_box shakey lightswitch2 room2"}
+{"ts": 19, "act": "generated_states", "state_id": 32, "op": "descend_box shakey shakey room2"}
+{"ts":19, "act": "state_update", "state_id": 36, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "0(Atom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [32, "turn_on_light shakey lightswitch2 room2", 1]}
+{"ts": 19, "act": "generated_states", "state_id": 32, "op": "turn_on_light shakey lightswitch2 room2"}
+{"ts":19, "act": "state_update", "state_id": 36, "g": -1, "real_g": -1}
+{"ts": 19, "act": "evaluated_states", "state_id": 36, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 19}
+{"ts":19, "act": "state_update", "state_id": 36, "h_ff": 7}
+{"ts": 19, "act": "evaluated_heuristics", "count": 1}
+{"ts": 19, "act": "generated_states", "state_id": 32, "op": "descend_box shakey toy2 room2"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 20}
+{"ts": 20, "act": "expanded_states", "state_id": 33}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 20}
+{"ts":20, "act": "state_update", "state_id": 32, "new_parent": [33, "climb_box shakey box room2", 1]}
+{"ts": 20, "act": "generated_states", "state_id": 33, "op": "climb_box shakey box room2"}
+{"ts":20, "act": "state_update", "state_id": 31, "new_parent": [33, "push_box shakey box room2 room1 door2", 1]}
+{"ts": 20, "act": "generated_states", "state_id": 33, "op": "push_box shakey box room2 room1 door2"}
+{"ts":20, "act": "state_update", "state_id": 37, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [33, "push_box shakey box room2 room3 door3", 1]}
+{"ts": 20, "act": "generated_states", "state_id": 33, "op": "push_box shakey box room2 room3 door3"}
+{"ts":20, "act": "state_update", "state_id": 37, "g": -1, "real_g": -1}
+{"ts": 20, "act": "evaluated_states", "state_id": 37, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 20}
+{"ts":20, "act": "state_update", "state_id": 37, "h_ff": 7}
+{"ts": 20, "act": "evaluated_heuristics", "count": 1}
+{"ts":20, "act": "state_update", "state_id": 38, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [33, "move_room shakey room2 room1 door1", 1]}
+{"ts": 20, "act": "generated_states", "state_id": 33, "op": "move_room shakey room2 room1 door1"}
+{"ts":20, "act": "state_update", "state_id": 38, "g": -1, "real_g": -1}
+{"ts": 20, "act": "evaluated_states", "state_id": 38, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 20}
+{"ts":20, "act": "state_update", "state_id": 38, "h_ff": 7}
+{"ts": 20, "act": "evaluated_heuristics", "count": 1}
+{"ts": 20, "act": "generated_states", "state_id": 33, "op": "move_room shakey room2 room1 door2"}
+{"ts":20, "act": "state_update", "state_id": 38, "g": 9, "real_g": 9}
+{"ts":20, "act": "state_update", "state_id": 39, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [33, "move_room shakey room2 room3 door3", 1]}
+{"ts": 20, "act": "generated_states", "state_id": 33, "op": "move_room shakey room2 room3 door3"}
+{"ts":20, "act": "state_update", "state_id": 39, "g": -1, "real_g": -1}
+{"ts": 20, "act": "evaluated_states", "state_id": 39, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 20}
+{"ts":20, "act": "state_update", "state_id": 39, "h_ff": 7}
+{"ts": 20, "act": "evaluated_heuristics", "count": 1}
+{"ts":20, "act": "state_update", "state_id": 40, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "1(Atom is_in(toy1, room2))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [33, "drop_object shakey toy1 gripper1 room2", 1]}
+{"ts": 20, "act": "generated_states", "state_id": 33, "op": "drop_object shakey toy1 gripper1 room2"}
+{"ts":20, "act": "state_update", "state_id": 40, "g": -1, "real_g": -1}
+{"ts": 20, "act": "evaluated_states", "state_id": 40, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 20}
+{"ts":20, "act": "state_update", "state_id": 40, "h_ff": 8}
+{"ts": 20, "act": "evaluated_heuristics", "count": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 21}
+{"ts": 21, "act": "expanded_states", "state_id": 34}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 21}
+{"ts":21, "act": "state_update", "state_id": 31, "new_parent": [34, "move_room shakey room2 room1 door1", 1]}
+{"ts": 21, "act": "generated_states", "state_id": 34, "op": "move_room shakey room2 room1 door1"}
+{"ts": 21, "act": "generated_states", "state_id": 34, "op": "move_room shakey room2 room1 door2"}
+{"ts":21, "act": "state_update", "state_id": 41, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [34, "move_room shakey room2 room3 door3", 1]}
+{"ts": 21, "act": "generated_states", "state_id": 34, "op": "move_room shakey room2 room3 door3"}
+{"ts":21, "act": "state_update", "state_id": 41, "g": -1, "real_g": -1}
+{"ts": 21, "act": "evaluated_states", "state_id": 41, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 21}
+{"ts":21, "act": "state_update", "state_id": 41, "h_ff": 7}
+{"ts": 21, "act": "evaluated_heuristics", "count": 1}
+{"ts":21, "act": "state_update", "state_id": 42, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "1(Atom is_in(toy1, room2))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [34, "drop_object shakey toy1 gripper1 room2", 1]}
+{"ts": 21, "act": "generated_states", "state_id": 34, "op": "drop_object shakey toy1 gripper1 room2"}
+{"ts":21, "act": "state_update", "state_id": 42, "g": -1, "real_g": -1}
+{"ts": 21, "act": "evaluated_states", "state_id": 42, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 21}
+{"ts":21, "act": "state_update", "state_id": 42, "h_ff": 8}
+{"ts": 21, "act": "evaluated_heuristics", "count": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 22}
+{"ts":22, "act": "state_update", "state_id": 35, "g": 8, "real_g": 8}
+{"ts": 22, "act": "expanded_states", "state_id": 35}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 22}
+{"ts":22, "act": "state_update", "state_id": 37, "new_parent": [35, "descend_box shakey box room3", 1]}
+{"ts": 22, "act": "generated_states", "state_id": 35, "op": "descend_box shakey box room3"}
+{"ts":22, "act": "state_update", "state_id": 37, "g": 9, "real_g": 9}
+{"ts":22, "act": "state_update", "state_id": 32, "new_parent": [35, "push_box shakey box room3 room2 door3", 1]}
+{"ts": 22, "act": "generated_states", "state_id": 35, "op": "push_box shakey box room3 room2 door3"}
+{"ts": 22, "act": "generated_states", "state_id": 35, "op": "descend_box shakey lightswitch3 room3"}
+{"ts": 22, "act": "generated_states", "state_id": 35, "op": "descend_box shakey shakey room3"}
+{"ts":22, "act": "state_update", "state_id": 43, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "0(Atom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "0(Atom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [35, "turn_on_light shakey lightswitch3 room3", 1]}
+{"ts": 22, "act": "generated_states", "state_id": 35, "op": "turn_on_light shakey lightswitch3 room3"}
+{"ts":22, "act": "state_update", "state_id": 43, "g": -1, "real_g": -1}
+{"ts": 22, "act": "evaluated_states", "state_id": 43, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 22}
+{"ts":22, "act": "state_update", "state_id": 43, "h_ff": 8}
+{"ts": 22, "act": "evaluated_heuristics", "count": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 23}
+{"ts":23, "act": "state_update", "state_id": 36, "g": 8, "real_g": 8}
+{"ts": 23, "act": "expanded_states", "state_id": 36}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 23}
+{"ts":23, "act": "state_update", "state_id": 44, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [36, "descend_box shakey box room2", 1]}
+{"ts": 23, "act": "generated_states", "state_id": 36, "op": "descend_box shakey box room2"}
+{"ts":23, "act": "state_update", "state_id": 44, "g": -1, "real_g": -1}
+{"ts": 23, "act": "evaluated_states", "state_id": 44, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 23}
+{"ts":23, "act": "state_update", "state_id": 44, "h_ff": 7}
+{"ts": 23, "act": "evaluated_heuristics", "count": 1}
+{"ts":23, "act": "state_update", "state_id": 45, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "0(Atom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [36, "push_box shakey box room2 room1 door2", 1]}
+{"ts": 23, "act": "generated_states", "state_id": 36, "op": "push_box shakey box room2 room1 door2"}
+{"ts":23, "act": "state_update", "state_id": 45, "g": -1, "real_g": -1}
+{"ts": 23, "act": "evaluated_states", "state_id": 45, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 23}
+{"ts":23, "act": "state_update", "state_id": 45, "h_ff": 7}
+{"ts": 23, "act": "evaluated_heuristics", "count": 1}
+{"ts":23, "act": "state_update", "state_id": 46, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "0(Atom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [36, "push_box shakey box room2 room3 door3", 1]}
+{"ts": 23, "act": "generated_states", "state_id": 36, "op": "push_box shakey box room2 room3 door3"}
+{"ts":23, "act": "state_update", "state_id": 46, "g": -1, "real_g": -1}
+{"ts": 23, "act": "evaluated_states", "state_id": 46, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 23}
+{"ts":23, "act": "state_update", "state_id": 46, "h_ff": 7}
+{"ts": 23, "act": "evaluated_heuristics", "count": 1}
+{"ts": 23, "act": "generated_states", "state_id": 36, "op": "descend_box shakey lightswitch2 room2"}
+{"ts":23, "act": "state_update", "state_id": 44, "g": 9, "real_g": 9}
+{"ts": 23, "act": "generated_states", "state_id": 36, "op": "descend_box shakey shakey room2"}
+{"ts":23, "act": "state_update", "state_id": 32, "new_parent": [36, "turn_off_light shakey lightswitch2 room2", 1]}
+{"ts": 23, "act": "generated_states", "state_id": 36, "op": "turn_off_light shakey lightswitch2 room2"}
+{"ts": 23, "act": "generated_states", "state_id": 36, "op": "descend_box shakey toy2 room2"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 24}
+{"ts": 24, "act": "expanded_states", "state_id": 37}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 24}
+{"ts":24, "act": "state_update", "state_id": 35, "new_parent": [37, "climb_box shakey box room3", 1]}
+{"ts": 24, "act": "generated_states", "state_id": 37, "op": "climb_box shakey box room3"}
+{"ts":24, "act": "state_update", "state_id": 33, "new_parent": [37, "push_box shakey box room3 room2 door3", 1]}
+{"ts": 24, "act": "generated_states", "state_id": 37, "op": "push_box shakey box room3 room2 door3"}
+{"ts":24, "act": "state_update", "state_id": 47, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "3(Atom is_object_gripped(toy1, gripper1))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [37, "move_room shakey room3 room2 door3", 1]}
+{"ts": 24, "act": "generated_states", "state_id": 37, "op": "move_room shakey room3 room2 door3"}
+{"ts":24, "act": "state_update", "state_id": 47, "g": -1, "real_g": -1}
+{"ts": 24, "act": "evaluated_states", "state_id": 47, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 24}
+{"ts":24, "act": "state_update", "state_id": 47, "h_ff": 7}
+{"ts": 24, "act": "evaluated_heuristics", "count": 1}
+{"ts":24, "act": "state_update", "state_id": 48, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [37, "drop_object shakey toy1 gripper1 room3", 1]}
+{"ts": 24, "act": "generated_states", "state_id": 37, "op": "drop_object shakey toy1 gripper1 room3"}
+{"ts":24, "act": "state_update", "state_id": 48, "g": -1, "real_g": -1}
+{"ts": 24, "act": "evaluated_states", "state_id": 48, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 24}
+{"ts":24, "act": "state_update", "state_id": 48, "h_ff": 6}
+{"ts": 24, "act": "evaluated_heuristics", "count": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 25}
+{"ts":25, "act": "state_update", "state_id": 48, "g": 10, "real_g": 10}
+{"ts": 25, "act": "expanded_states", "state_id": 48}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 25}
+{"ts":25, "act": "state_update", "state_id": 49, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [48, "climb_box shakey box room3", 1]}
+{"ts": 25, "act": "generated_states", "state_id": 48, "op": "climb_box shakey box room3"}
+{"ts":25, "act": "state_update", "state_id": 49, "g": -1, "real_g": -1}
+{"ts": 25, "act": "evaluated_states", "state_id": 49, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 25}
+{"ts":25, "act": "state_update", "state_id": 49, "h_ff": 6}
+{"ts": 25, "act": "evaluated_heuristics", "count": 1}
+{"ts":25, "act": "state_update", "state_id": 50, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [48, "push_box shakey box room3 room2 door3", 1]}
+{"ts": 25, "act": "generated_states", "state_id": 48, "op": "push_box shakey box room3 room2 door3"}
+{"ts":25, "act": "state_update", "state_id": 50, "g": -1, "real_g": -1}
+{"ts": 25, "act": "evaluated_states", "state_id": 50, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 25}
+{"ts":25, "act": "state_update", "state_id": 50, "h_ff": 6}
+{"ts": 25, "act": "evaluated_heuristics", "count": 1}
+{"ts":25, "act": "state_update", "state_id": 51, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [48, "move_room shakey room3 room2 door3", 1]}
+{"ts": 25, "act": "generated_states", "state_id": 48, "op": "move_room shakey room3 room2 door3"}
+{"ts":25, "act": "state_update", "state_id": 51, "g": -1, "real_g": -1}
+{"ts": 25, "act": "evaluated_states", "state_id": 51, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 25}
+{"ts":25, "act": "state_update", "state_id": 51, "h_ff": 6}
+{"ts": 25, "act": "evaluated_heuristics", "count": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 26}
+{"ts":26, "act": "state_update", "state_id": 49, "g": 11, "real_g": 11}
+{"ts": 26, "act": "expanded_states", "state_id": 49}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 26}
+{"ts":26, "act": "state_update", "state_id": 48, "new_parent": [49, "descend_box shakey box room3", 1]}
+{"ts": 26, "act": "generated_states", "state_id": 49, "op": "descend_box shakey box room3"}
+{"ts":26, "act": "state_update", "state_id": 52, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [49, "push_box shakey box room3 room2 door3", 1]}
+{"ts": 26, "act": "generated_states", "state_id": 49, "op": "push_box shakey box room3 room2 door3"}
+{"ts":26, "act": "state_update", "state_id": 52, "g": -1, "real_g": -1}
+{"ts": 26, "act": "evaluated_states", "state_id": 52, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 26}
+{"ts":26, "act": "state_update", "state_id": 52, "h_ff": 6}
+{"ts": 26, "act": "evaluated_heuristics", "count": 1}
+{"ts": 26, "act": "generated_states", "state_id": 49, "op": "descend_box shakey lightswitch3 room3"}
+{"ts": 26, "act": "generated_states", "state_id": 49, "op": "descend_box shakey shakey room3"}
+{"ts":26, "act": "state_update", "state_id": 53, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "0(Atom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [49, "turn_on_light shakey lightswitch3 room3", 1]}
+{"ts": 26, "act": "generated_states", "state_id": 49, "op": "turn_on_light shakey lightswitch3 room3"}
+{"ts":26, "act": "state_update", "state_id": 53, "g": -1, "real_g": -1}
+{"ts": 26, "act": "evaluated_states", "state_id": 53, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 26}
+{"ts":26, "act": "state_update", "state_id": 53, "h_ff": 7}
+{"ts": 26, "act": "evaluated_heuristics", "count": 1}
+{"ts": 26, "act": "generated_states", "state_id": 49, "op": "descend_box shakey toy1 room3"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 27}
+{"ts":27, "act": "state_update", "state_id": 50, "g": 11, "real_g": 11}
+{"ts": 27, "act": "expanded_states", "state_id": 50}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 27}
+{"ts":27, "act": "state_update", "state_id": 52, "new_parent": [50, "climb_box shakey box room2", 1]}
+{"ts": 27, "act": "generated_states", "state_id": 50, "op": "climb_box shakey box room2"}
+{"ts":27, "act": "state_update", "state_id": 52, "g": 12, "real_g": 12}
+{"ts":27, "act": "state_update", "state_id": 54, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [50, "push_box shakey box room2 room1 door2", 1]}
+{"ts": 27, "act": "generated_states", "state_id": 50, "op": "push_box shakey box room2 room1 door2"}
+{"ts":27, "act": "state_update", "state_id": 54, "g": -1, "real_g": -1}
+{"ts": 27, "act": "evaluated_states", "state_id": 54, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 27}
+{"ts":27, "act": "state_update", "state_id": 54, "h_ff": 6}
+{"ts": 27, "act": "evaluated_heuristics", "count": 1}
+{"ts":27, "act": "state_update", "state_id": 48, "new_parent": [50, "push_box shakey box room2 room3 door3", 1]}
+{"ts": 27, "act": "generated_states", "state_id": 50, "op": "push_box shakey box room2 room3 door3"}
+{"ts":27, "act": "state_update", "state_id": 55, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [50, "move_room shakey room2 room1 door1", 1]}
+{"ts": 27, "act": "generated_states", "state_id": 50, "op": "move_room shakey room2 room1 door1"}
+{"ts":27, "act": "state_update", "state_id": 55, "g": -1, "real_g": -1}
+{"ts": 27, "act": "evaluated_states", "state_id": 55, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 27}
+{"ts":27, "act": "state_update", "state_id": 55, "h_ff": 6}
+{"ts": 27, "act": "evaluated_heuristics", "count": 1}
+{"ts": 27, "act": "generated_states", "state_id": 50, "op": "move_room shakey room2 room1 door2"}
+{"ts":27, "act": "state_update", "state_id": 55, "g": 12, "real_g": 12}
+{"ts":27, "act": "state_update", "state_id": 56, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [50, "move_room shakey room2 room3 door3", 1]}
+{"ts": 27, "act": "generated_states", "state_id": 50, "op": "move_room shakey room2 room3 door3"}
+{"ts":27, "act": "state_update", "state_id": 56, "g": -1, "real_g": -1}
+{"ts": 27, "act": "evaluated_states", "state_id": 56, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 27}
+{"ts":27, "act": "state_update", "state_id": 56, "h_ff": 6}
+{"ts": 27, "act": "evaluated_heuristics", "count": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 28}
+{"ts":28, "act": "state_update", "state_id": 51, "g": 11, "real_g": 11}
+{"ts": 28, "act": "expanded_states", "state_id": 51}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 28}
+{"ts":28, "act": "state_update", "state_id": 57, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [51, "move_room shakey room2 room1 door1", 1]}
+{"ts": 28, "act": "generated_states", "state_id": 51, "op": "move_room shakey room2 room1 door1"}
+{"ts":28, "act": "state_update", "state_id": 57, "g": -1, "real_g": -1}
+{"ts": 28, "act": "evaluated_states", "state_id": 57, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 28}
+{"ts":28, "act": "state_update", "state_id": 57, "h_ff": 6}
+{"ts": 28, "act": "evaluated_heuristics", "count": 1}
+{"ts": 28, "act": "generated_states", "state_id": 51, "op": "move_room shakey room2 room1 door2"}
+{"ts":28, "act": "state_update", "state_id": 57, "g": 12, "real_g": 12}
+{"ts":28, "act": "state_update", "state_id": 48, "new_parent": [51, "move_room shakey room2 room3 door3", 1]}
+{"ts": 28, "act": "generated_states", "state_id": 51, "op": "move_room shakey room2 room3 door3"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 29}
+{"ts": 29, "act": "expanded_states", "state_id": 52}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 29}
+{"ts":29, "act": "state_update", "state_id": 50, "new_parent": [52, "descend_box shakey box room2", 1]}
+{"ts": 29, "act": "generated_states", "state_id": 52, "op": "descend_box shakey box room2"}
+{"ts":29, "act": "state_update", "state_id": 58, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [52, "push_box shakey box room2 room1 door2", 1]}
+{"ts": 29, "act": "generated_states", "state_id": 52, "op": "push_box shakey box room2 room1 door2"}
+{"ts":29, "act": "state_update", "state_id": 58, "g": -1, "real_g": -1}
+{"ts": 29, "act": "evaluated_states", "state_id": 58, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 29}
+{"ts":29, "act": "state_update", "state_id": 58, "h_ff": 6}
+{"ts": 29, "act": "evaluated_heuristics", "count": 1}
+{"ts":29, "act": "state_update", "state_id": 49, "new_parent": [52, "push_box shakey box room2 room3 door3", 1]}
+{"ts": 29, "act": "generated_states", "state_id": 52, "op": "push_box shakey box room2 room3 door3"}
+{"ts": 29, "act": "generated_states", "state_id": 52, "op": "descend_box shakey lightswitch2 room2"}
+{"ts": 29, "act": "generated_states", "state_id": 52, "op": "descend_box shakey shakey room2"}
+{"ts":29, "act": "state_update", "state_id": 59, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [52, "turn_on_light shakey lightswitch2 room2", 1]}
+{"ts": 29, "act": "generated_states", "state_id": 52, "op": "turn_on_light shakey lightswitch2 room2"}
+{"ts":29, "act": "state_update", "state_id": 59, "g": -1, "real_g": -1}
+{"ts": 29, "act": "evaluated_states", "state_id": 59, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 29}
+{"ts":29, "act": "state_update", "state_id": 59, "h_ff": 6}
+{"ts": 29, "act": "evaluated_heuristics", "count": 1}
+{"ts": 29, "act": "generated_states", "state_id": 52, "op": "descend_box shakey toy2 room2"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 30}
+{"ts":30, "act": "state_update", "state_id": 54, "g": 12, "real_g": 12}
+{"ts": 30, "act": "expanded_states", "state_id": 54}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 30}
+{"ts":30, "act": "state_update", "state_id": 58, "new_parent": [54, "climb_box shakey box room1", 1]}
+{"ts": 30, "act": "generated_states", "state_id": 54, "op": "climb_box shakey box room1"}
+{"ts":30, "act": "state_update", "state_id": 58, "g": 13, "real_g": 13}
+{"ts":30, "act": "state_update", "state_id": 50, "new_parent": [54, "push_box shakey box room1 room2 door2", 1]}
+{"ts": 30, "act": "generated_states", "state_id": 54, "op": "push_box shakey box room1 room2 door2"}
+{"ts":30, "act": "state_update", "state_id": 60, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [54, "move_room shakey room1 room2 door1", 1]}
+{"ts": 30, "act": "generated_states", "state_id": 54, "op": "move_room shakey room1 room2 door1"}
+{"ts":30, "act": "state_update", "state_id": 60, "g": -1, "real_g": -1}
+{"ts": 30, "act": "evaluated_states", "state_id": 60, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 30}
+{"ts":30, "act": "state_update", "state_id": 60, "h_ff": 6}
+{"ts": 30, "act": "evaluated_heuristics", "count": 1}
+{"ts": 30, "act": "generated_states", "state_id": 54, "op": "move_room shakey room1 room2 door2"}
+{"ts":30, "act": "state_update", "state_id": 60, "g": 13, "real_g": 13}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 31}
+{"ts": 31, "act": "expanded_states", "state_id": 55}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 31}
+{"ts":31, "act": "state_update", "state_id": 50, "new_parent": [55, "move_room shakey room1 room2 door1", 1]}
+{"ts": 31, "act": "generated_states", "state_id": 55, "op": "move_room shakey room1 room2 door1"}
+{"ts": 31, "act": "generated_states", "state_id": 55, "op": "move_room shakey room1 room2 door2"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 32}
+{"ts":32, "act": "state_update", "state_id": 56, "g": 12, "real_g": 12}
+{"ts": 32, "act": "expanded_states", "state_id": 56}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 32}
+{"ts":32, "act": "state_update", "state_id": 50, "new_parent": [56, "move_room shakey room3 room2 door3", 1]}
+{"ts": 32, "act": "generated_states", "state_id": 56, "op": "move_room shakey room3 room2 door3"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 33}
+{"ts": 33, "act": "expanded_states", "state_id": 57}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 33}
+{"ts":33, "act": "state_update", "state_id": 51, "new_parent": [57, "move_room shakey room1 room2 door1", 1]}
+{"ts": 33, "act": "generated_states", "state_id": 57, "op": "move_room shakey room1 room2 door1"}
+{"ts": 33, "act": "generated_states", "state_id": 57, "op": "move_room shakey room1 room2 door2"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 34}
+{"ts": 34, "act": "expanded_states", "state_id": 58}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 34}
+{"ts":34, "act": "state_update", "state_id": 54, "new_parent": [58, "descend_box shakey box room1", 1]}
+{"ts": 34, "act": "generated_states", "state_id": 58, "op": "descend_box shakey box room1"}
+{"ts":34, "act": "state_update", "state_id": 52, "new_parent": [58, "push_box shakey box room1 room2 door2", 1]}
+{"ts": 34, "act": "generated_states", "state_id": 58, "op": "push_box shakey box room1 room2 door2"}
+{"ts": 34, "act": "generated_states", "state_id": 58, "op": "descend_box shakey lightswitch1 room1"}
+{"ts": 34, "act": "generated_states", "state_id": 58, "op": "descend_box shakey shakey room1"}
+{"ts":34, "act": "state_update", "state_id": 61, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "0(Atom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [58, "turn_on_light shakey lightswitch1 room1", 1]}
+{"ts": 34, "act": "generated_states", "state_id": 58, "op": "turn_on_light shakey lightswitch1 room1"}
+{"ts":34, "act": "state_update", "state_id": 61, "g": -1, "real_g": -1}
+{"ts": 34, "act": "evaluated_states", "state_id": 61, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 34}
+{"ts":34, "act": "state_update", "state_id": 61, "h_ff": 7}
+{"ts": 34, "act": "evaluated_heuristics", "count": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 35}
+{"ts":35, "act": "state_update", "state_id": 59, "g": 13, "real_g": 13}
+{"ts": 35, "act": "expanded_states", "state_id": 59}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 35}
+{"ts":35, "act": "state_update", "state_id": 62, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [59, "descend_box shakey box room2", 1]}
+{"ts": 35, "act": "generated_states", "state_id": 59, "op": "descend_box shakey box room2"}
+{"ts":35, "act": "state_update", "state_id": 62, "g": -1, "real_g": -1}
+{"ts": 35, "act": "evaluated_states", "state_id": 62, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 35}
+{"ts":35, "act": "state_update", "state_id": 62, "h_ff": 6}
+{"ts": 35, "act": "evaluated_heuristics", "count": 1}
+{"ts":35, "act": "state_update", "state_id": 63, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [59, "push_box shakey box room2 room1 door2", 1]}
+{"ts": 35, "act": "generated_states", "state_id": 59, "op": "push_box shakey box room2 room1 door2"}
+{"ts":35, "act": "state_update", "state_id": 63, "g": -1, "real_g": -1}
+{"ts": 35, "act": "evaluated_states", "state_id": 63, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 35}
+{"ts":35, "act": "state_update", "state_id": 63, "h_ff": 6}
+{"ts": 35, "act": "evaluated_heuristics", "count": 1}
+{"ts":35, "act": "state_update", "state_id": 64, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [59, "push_box shakey box room2 room3 door3", 1]}
+{"ts": 35, "act": "generated_states", "state_id": 59, "op": "push_box shakey box room2 room3 door3"}
+{"ts":35, "act": "state_update", "state_id": 64, "g": -1, "real_g": -1}
+{"ts": 35, "act": "evaluated_states", "state_id": 64, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 35}
+{"ts":35, "act": "state_update", "state_id": 64, "h_ff": 6}
+{"ts": 35, "act": "evaluated_heuristics", "count": 1}
+{"ts": 35, "act": "generated_states", "state_id": 59, "op": "descend_box shakey lightswitch2 room2"}
+{"ts":35, "act": "state_update", "state_id": 62, "g": 14, "real_g": 14}
+{"ts": 35, "act": "generated_states", "state_id": 59, "op": "descend_box shakey shakey room2"}
+{"ts":35, "act": "state_update", "state_id": 52, "new_parent": [59, "turn_off_light shakey lightswitch2 room2", 1]}
+{"ts": 35, "act": "generated_states", "state_id": 59, "op": "turn_off_light shakey lightswitch2 room2"}
+{"ts": 35, "act": "generated_states", "state_id": 59, "op": "descend_box shakey toy2 room2"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 36}
+{"ts": 36, "act": "expanded_states", "state_id": 60}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 36}
+{"ts":36, "act": "state_update", "state_id": 54, "new_parent": [60, "move_room shakey room2 room1 door1", 1]}
+{"ts": 36, "act": "generated_states", "state_id": 60, "op": "move_room shakey room2 room1 door1"}
+{"ts": 36, "act": "generated_states", "state_id": 60, "op": "move_room shakey room2 room1 door2"}
+{"ts":36, "act": "state_update", "state_id": 65, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [60, "move_room shakey room2 room3 door3", 1]}
+{"ts": 36, "act": "generated_states", "state_id": 60, "op": "move_room shakey room2 room3 door3"}
+{"ts":36, "act": "state_update", "state_id": 65, "g": -1, "real_g": -1}
+{"ts": 36, "act": "evaluated_states", "state_id": 65, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 36}
+{"ts":36, "act": "state_update", "state_id": 65, "h_ff": 6}
+{"ts": 36, "act": "evaluated_heuristics", "count": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 37}
+{"ts": 37, "act": "expanded_states", "state_id": 62}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 37}
+{"ts":37, "act": "state_update", "state_id": 59, "new_parent": [62, "climb_box shakey box room2", 1]}
+{"ts": 37, "act": "generated_states", "state_id": 62, "op": "climb_box shakey box room2"}
+{"ts":37, "act": "state_update", "state_id": 66, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [62, "push_box shakey box room2 room1 door2", 1]}
+{"ts": 37, "act": "generated_states", "state_id": 62, "op": "push_box shakey box room2 room1 door2"}
+{"ts":37, "act": "state_update", "state_id": 66, "g": -1, "real_g": -1}
+{"ts": 37, "act": "evaluated_states", "state_id": 66, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 37}
+{"ts":37, "act": "state_update", "state_id": 66, "h_ff": 6}
+{"ts": 37, "act": "evaluated_heuristics", "count": 1}
+{"ts":37, "act": "state_update", "state_id": 67, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [62, "push_box shakey box room2 room3 door3", 1]}
+{"ts": 37, "act": "generated_states", "state_id": 62, "op": "push_box shakey box room2 room3 door3"}
+{"ts":37, "act": "state_update", "state_id": 67, "g": -1, "real_g": -1}
+{"ts": 37, "act": "evaluated_states", "state_id": 67, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 37}
+{"ts":37, "act": "state_update", "state_id": 67, "h_ff": 6}
+{"ts": 37, "act": "evaluated_heuristics", "count": 1}
+{"ts":37, "act": "state_update", "state_id": 68, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "3(Atom is_object_gripped(toy2, gripper1))"}, "new_parent": [62, "pick_object shakey toy2 gripper1 room2 lightswitch2", 1]}
+{"ts": 37, "act": "generated_states", "state_id": 62, "op": "pick_object shakey toy2 gripper1 room2 lightswitch2"}
+{"ts":37, "act": "state_update", "state_id": 68, "g": -1, "real_g": -1}
+{"ts": 37, "act": "evaluated_states", "state_id": 68, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 37}
+{"ts":37, "act": "state_update", "state_id": 68, "h_ff": 5}
+{"ts": 37, "act": "evaluated_heuristics", "count": 1}
+{"ts":37, "act": "state_update", "state_id": 69, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "1(NegatedAtom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "4(Atom is_object_gripped(toy2, gripper2))"}, "new_parent": [62, "pick_object shakey toy2 gripper2 room2 lightswitch2", 1]}
+{"ts": 37, "act": "generated_states", "state_id": 62, "op": "pick_object shakey toy2 gripper2 room2 lightswitch2"}
+{"ts":37, "act": "state_update", "state_id": 69, "g": -1, "real_g": -1}
+{"ts": 37, "act": "evaluated_states", "state_id": 69, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 37}
+{"ts":37, "act": "state_update", "state_id": 69, "h_ff": 5}
+{"ts": 37, "act": "evaluated_heuristics", "count": 1}
+{"ts":37, "act": "state_update", "state_id": 70, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [62, "move_room shakey room2 room1 door1", 1]}
+{"ts": 37, "act": "generated_states", "state_id": 62, "op": "move_room shakey room2 room1 door1"}
+{"ts":37, "act": "state_update", "state_id": 70, "g": -1, "real_g": -1}
+{"ts": 37, "act": "evaluated_states", "state_id": 70, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 37}
+{"ts":37, "act": "state_update", "state_id": 70, "h_ff": 6}
+{"ts": 37, "act": "evaluated_heuristics", "count": 1}
+{"ts": 37, "act": "generated_states", "state_id": 62, "op": "move_room shakey room2 room1 door2"}
+{"ts":37, "act": "state_update", "state_id": 70, "g": 15, "real_g": 15}
+{"ts":37, "act": "state_update", "state_id": 71, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "1(Atom is_in(toy2, room2))"}, "new_parent": [62, "move_room shakey room2 room3 door3", 1]}
+{"ts": 37, "act": "generated_states", "state_id": 62, "op": "move_room shakey room2 room3 door3"}
+{"ts":37, "act": "state_update", "state_id": 71, "g": -1, "real_g": -1}
+{"ts": 37, "act": "evaluated_states", "state_id": 71, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 37}
+{"ts":37, "act": "state_update", "state_id": 71, "h_ff": 6}
+{"ts": 37, "act": "evaluated_heuristics", "count": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 38}
+{"ts":38, "act": "state_update", "state_id": 68, "g": 15, "real_g": 15}
+{"ts": 38, "act": "expanded_states", "state_id": 68}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 38}
+{"ts":38, "act": "state_update", "state_id": 72, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "0(Atom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "3(Atom is_object_gripped(toy2, gripper1))"}, "new_parent": [68, "climb_box shakey box room2", 1]}
+{"ts": 38, "act": "generated_states", "state_id": 68, "op": "climb_box shakey box room2"}
+{"ts":38, "act": "state_update", "state_id": 72, "g": -1, "real_g": -1}
+{"ts": 38, "act": "evaluated_states", "state_id": 72, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 38}
+{"ts":38, "act": "state_update", "state_id": 72, "h_ff": 5}
+{"ts": 38, "act": "evaluated_heuristics", "count": 1}
+{"ts":38, "act": "state_update", "state_id": 73, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "3(Atom is_object_gripped(toy2, gripper1))"}, "new_parent": [68, "push_box shakey box room2 room1 door2", 1]}
+{"ts": 38, "act": "generated_states", "state_id": 68, "op": "push_box shakey box room2 room1 door2"}
+{"ts":38, "act": "state_update", "state_id": 73, "g": -1, "real_g": -1}
+{"ts": 38, "act": "evaluated_states", "state_id": 73, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 38}
+{"ts":38, "act": "state_update", "state_id": 73, "h_ff": 5}
+{"ts": 38, "act": "evaluated_heuristics", "count": 1}
+{"ts":38, "act": "state_update", "state_id": 74, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "3(Atom is_object_gripped(toy2, gripper1))"}, "new_parent": [68, "push_box shakey box room2 room3 door3", 1]}
+{"ts": 38, "act": "generated_states", "state_id": 68, "op": "push_box shakey box room2 room3 door3"}
+{"ts":38, "act": "state_update", "state_id": 74, "g": -1, "real_g": -1}
+{"ts": 38, "act": "evaluated_states", "state_id": 74, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 38}
+{"ts":38, "act": "state_update", "state_id": 74, "h_ff": 5}
+{"ts": 38, "act": "evaluated_heuristics", "count": 1}
+{"ts":38, "act": "state_update", "state_id": 75, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "3(Atom is_object_gripped(toy2, gripper1))"}, "new_parent": [68, "move_room shakey room2 room1 door1", 1]}
+{"ts": 38, "act": "generated_states", "state_id": 68, "op": "move_room shakey room2 room1 door1"}
+{"ts":38, "act": "state_update", "state_id": 75, "g": -1, "real_g": -1}
+{"ts": 38, "act": "evaluated_states", "state_id": 75, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 38}
+{"ts":38, "act": "state_update", "state_id": 75, "h_ff": 5}
+{"ts": 38, "act": "evaluated_heuristics", "count": 1}
+{"ts": 38, "act": "generated_states", "state_id": 68, "op": "move_room shakey room2 room1 door2"}
+{"ts":38, "act": "state_update", "state_id": 75, "g": 16, "real_g": 16}
+{"ts":38, "act": "state_update", "state_id": 76, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "3(Atom is_object_gripped(toy2, gripper1))"}, "new_parent": [68, "move_room shakey room2 room3 door3", 1]}
+{"ts": 38, "act": "generated_states", "state_id": 68, "op": "move_room shakey room2 room3 door3"}
+{"ts":38, "act": "state_update", "state_id": 76, "g": -1, "real_g": -1}
+{"ts": 38, "act": "evaluated_states", "state_id": 76, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 38}
+{"ts":38, "act": "state_update", "state_id": 76, "h_ff": 5}
+{"ts": 38, "act": "evaluated_heuristics", "count": 1}
+{"ts":38, "act": "state_update", "state_id": 62, "new_parent": [68, "drop_object shakey toy2 gripper1 room2", 1]}
+{"ts": 38, "act": "generated_states", "state_id": 68, "op": "drop_object shakey toy2 gripper1 room2"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 39}
+{"ts":39, "act": "state_update", "state_id": 69, "g": 15, "real_g": 15}
+{"ts": 39, "act": "expanded_states", "state_id": 69}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 39}
+{"ts":39, "act": "state_update", "state_id": 77, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "1(NegatedAtom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "4(Atom is_object_gripped(toy2, gripper2))"}, "new_parent": [69, "climb_box shakey box room2", 1]}
+{"ts": 39, "act": "generated_states", "state_id": 69, "op": "climb_box shakey box room2"}
+{"ts":39, "act": "state_update", "state_id": 77, "g": -1, "real_g": -1}
+{"ts": 39, "act": "evaluated_states", "state_id": 77, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 39}
+{"ts":39, "act": "state_update", "state_id": 77, "h_ff": 5}
+{"ts": 39, "act": "evaluated_heuristics", "count": 1}
+{"ts":39, "act": "state_update", "state_id": 78, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "1(NegatedAtom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "4(Atom is_object_gripped(toy2, gripper2))"}, "new_parent": [69, "push_box shakey box room2 room1 door2", 1]}
+{"ts": 39, "act": "generated_states", "state_id": 69, "op": "push_box shakey box room2 room1 door2"}
+{"ts":39, "act": "state_update", "state_id": 78, "g": -1, "real_g": -1}
+{"ts": 39, "act": "evaluated_states", "state_id": 78, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 39}
+{"ts":39, "act": "state_update", "state_id": 78, "h_ff": 5}
+{"ts": 39, "act": "evaluated_heuristics", "count": 1}
+{"ts":39, "act": "state_update", "state_id": 79, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "1(NegatedAtom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "4(Atom is_object_gripped(toy2, gripper2))"}, "new_parent": [69, "push_box shakey box room2 room3 door3", 1]}
+{"ts": 39, "act": "generated_states", "state_id": 69, "op": "push_box shakey box room2 room3 door3"}
+{"ts":39, "act": "state_update", "state_id": 79, "g": -1, "real_g": -1}
+{"ts": 39, "act": "evaluated_states", "state_id": 79, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 39}
+{"ts":39, "act": "state_update", "state_id": 79, "h_ff": 5}
+{"ts": 39, "act": "evaluated_heuristics", "count": 1}
+{"ts":39, "act": "state_update", "state_id": 80, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "1(NegatedAtom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "4(Atom is_object_gripped(toy2, gripper2))"}, "new_parent": [69, "move_room shakey room2 room1 door1", 1]}
+{"ts": 39, "act": "generated_states", "state_id": 69, "op": "move_room shakey room2 room1 door1"}
+{"ts":39, "act": "state_update", "state_id": 80, "g": -1, "real_g": -1}
+{"ts": 39, "act": "evaluated_states", "state_id": 80, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 39}
+{"ts":39, "act": "state_update", "state_id": 80, "h_ff": 5}
+{"ts": 39, "act": "evaluated_heuristics", "count": 1}
+{"ts": 39, "act": "generated_states", "state_id": 69, "op": "move_room shakey room2 room1 door2"}
+{"ts":39, "act": "state_update", "state_id": 80, "g": 16, "real_g": 16}
+{"ts":39, "act": "state_update", "state_id": 81, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "1(NegatedAtom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "4(Atom is_object_gripped(toy2, gripper2))"}, "new_parent": [69, "move_room shakey room2 room3 door3", 1]}
+{"ts": 39, "act": "generated_states", "state_id": 69, "op": "move_room shakey room2 room3 door3"}
+{"ts":39, "act": "state_update", "state_id": 81, "g": -1, "real_g": -1}
+{"ts": 39, "act": "evaluated_states", "state_id": 81, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 39}
+{"ts":39, "act": "state_update", "state_id": 81, "h_ff": 5}
+{"ts": 39, "act": "evaluated_heuristics", "count": 1}
+{"ts":39, "act": "state_update", "state_id": 62, "new_parent": [69, "drop_object shakey toy2 gripper2 room2", 1]}
+{"ts": 39, "act": "generated_states", "state_id": 69, "op": "drop_object shakey toy2 gripper2 room2"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 40}
+{"ts":40, "act": "state_update", "state_id": 72, "g": 16, "real_g": 16}
+{"ts": 40, "act": "expanded_states", "state_id": 72}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 40}
+{"ts":40, "act": "state_update", "state_id": 68, "new_parent": [72, "descend_box shakey box room2", 1]}
+{"ts": 40, "act": "generated_states", "state_id": 72, "op": "descend_box shakey box room2"}
+{"ts":40, "act": "state_update", "state_id": 82, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "0(Atom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "3(Atom is_object_gripped(toy2, gripper1))"}, "new_parent": [72, "push_box shakey box room2 room1 door2", 1]}
+{"ts": 40, "act": "generated_states", "state_id": 72, "op": "push_box shakey box room2 room1 door2"}
+{"ts":40, "act": "state_update", "state_id": 82, "g": -1, "real_g": -1}
+{"ts": 40, "act": "evaluated_states", "state_id": 82, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 40}
+{"ts":40, "act": "state_update", "state_id": 82, "h_ff": 5}
+{"ts": 40, "act": "evaluated_heuristics", "count": 1}
+{"ts":40, "act": "state_update", "state_id": 83, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "0(Atom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "0(Atom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "3(Atom is_object_gripped(toy2, gripper1))"}, "new_parent": [72, "push_box shakey box room2 room3 door3", 1]}
+{"ts": 40, "act": "generated_states", "state_id": 72, "op": "push_box shakey box room2 room3 door3"}
+{"ts":40, "act": "state_update", "state_id": 83, "g": -1, "real_g": -1}
+{"ts": 40, "act": "evaluated_states", "state_id": 83, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 40}
+{"ts":40, "act": "state_update", "state_id": 83, "h_ff": 5}
+{"ts": 40, "act": "evaluated_heuristics", "count": 1}
+{"ts": 40, "act": "generated_states", "state_id": 72, "op": "descend_box shakey lightswitch2 room2"}
+{"ts": 40, "act": "generated_states", "state_id": 72, "op": "descend_box shakey shakey room2"}
+{"ts":40, "act": "state_update", "state_id": 84, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "0(Atom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "3(Atom is_object_gripped(toy2, gripper1))"}, "new_parent": [72, "turn_off_light shakey lightswitch2 room2", 1]}
+{"ts": 40, "act": "generated_states", "state_id": 72, "op": "turn_off_light shakey lightswitch2 room2"}
+{"ts":40, "act": "state_update", "state_id": 84, "g": -1, "real_g": -1}
+{"ts": 40, "act": "evaluated_states", "state_id": 84, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 40}
+{"ts":40, "act": "state_update", "state_id": 84, "h_ff": 4}
+{"ts": 40, "act": "evaluated_heuristics", "count": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 41}
+{"ts":41, "act": "state_update", "state_id": 84, "g": 17, "real_g": 17}
+{"ts": 41, "act": "expanded_states", "state_id": 84}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 41}
+{"ts":41, "act": "state_update", "state_id": 85, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "3(Atom is_object_gripped(toy2, gripper1))"}, "new_parent": [84, "descend_box shakey box room2", 1]}
+{"ts": 41, "act": "generated_states", "state_id": 84, "op": "descend_box shakey box room2"}
+{"ts":41, "act": "state_update", "state_id": 85, "g": -1, "real_g": -1}
+{"ts": 41, "act": "evaluated_states", "state_id": 85, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 41}
+{"ts":41, "act": "state_update", "state_id": 85, "h_ff": 3}
+{"ts": 41, "act": "evaluated_heuristics", "count": 1}
+{"ts":41, "act": "state_update", "state_id": 86, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "0(Atom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "3(Atom is_object_gripped(toy2, gripper1))"}, "new_parent": [84, "push_box shakey box room2 room1 door2", 1]}
+{"ts": 41, "act": "generated_states", "state_id": 84, "op": "push_box shakey box room2 room1 door2"}
+{"ts":41, "act": "state_update", "state_id": 86, "g": -1, "real_g": -1}
+{"ts": 41, "act": "evaluated_states", "state_id": 86, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 41}
+{"ts":41, "act": "state_update", "state_id": 86, "h_ff": 4}
+{"ts": 41, "act": "evaluated_heuristics", "count": 1}
+{"ts":41, "act": "state_update", "state_id": 87, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "0(Atom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "3(Atom is_object_gripped(toy2, gripper1))"}, "new_parent": [84, "push_box shakey box room2 room3 door3", 1]}
+{"ts": 41, "act": "generated_states", "state_id": 84, "op": "push_box shakey box room2 room3 door3"}
+{"ts":41, "act": "state_update", "state_id": 87, "g": -1, "real_g": -1}
+{"ts": 41, "act": "evaluated_states", "state_id": 87, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 41}
+{"ts":41, "act": "state_update", "state_id": 87, "h_ff": 4}
+{"ts": 41, "act": "evaluated_heuristics", "count": 1}
+{"ts": 41, "act": "generated_states", "state_id": 84, "op": "descend_box shakey lightswitch2 room2"}
+{"ts":41, "act": "state_update", "state_id": 85, "g": 18, "real_g": 18}
+{"ts": 41, "act": "generated_states", "state_id": 84, "op": "descend_box shakey shakey room2"}
+{"ts":41, "act": "state_update", "state_id": 72, "new_parent": [84, "turn_on_light shakey lightswitch2 room2", 1]}
+{"ts": 41, "act": "generated_states", "state_id": 84, "op": "turn_on_light shakey lightswitch2 room2"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 42}
+{"ts": 42, "act": "expanded_states", "state_id": 85}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 42}
+{"ts":42, "act": "state_update", "state_id": 84, "new_parent": [85, "climb_box shakey box room2", 1]}
+{"ts": 42, "act": "generated_states", "state_id": 85, "op": "climb_box shakey box room2"}
+{"ts":42, "act": "state_update", "state_id": 88, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "3(Atom is_object_gripped(toy2, gripper1))"}, "new_parent": [85, "push_box shakey box room2 room1 door2", 1]}
+{"ts": 42, "act": "generated_states", "state_id": 85, "op": "push_box shakey box room2 room1 door2"}
+{"ts":42, "act": "state_update", "state_id": 88, "g": -1, "real_g": -1}
+{"ts": 42, "act": "evaluated_states", "state_id": 88, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 42}
+{"ts":42, "act": "state_update", "state_id": 88, "h_ff": 3}
+{"ts": 42, "act": "evaluated_heuristics", "count": 1}
+{"ts":42, "act": "state_update", "state_id": 89, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "3(Atom is_object_gripped(toy2, gripper1))"}, "new_parent": [85, "push_box shakey box room2 room3 door3", 1]}
+{"ts": 42, "act": "generated_states", "state_id": 85, "op": "push_box shakey box room2 room3 door3"}
+{"ts":42, "act": "state_update", "state_id": 89, "g": -1, "real_g": -1}
+{"ts": 42, "act": "evaluated_states", "state_id": 89, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 42}
+{"ts":42, "act": "state_update", "state_id": 89, "h_ff": 3}
+{"ts": 42, "act": "evaluated_heuristics", "count": 1}
+{"ts":42, "act": "state_update", "state_id": 90, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "3(Atom is_object_gripped(toy2, gripper1))"}, "new_parent": [85, "move_room shakey room2 room1 door1", 1]}
+{"ts": 42, "act": "generated_states", "state_id": 85, "op": "move_room shakey room2 room1 door1"}
+{"ts":42, "act": "state_update", "state_id": 90, "g": -1, "real_g": -1}
+{"ts": 42, "act": "evaluated_states", "state_id": 90, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 42}
+{"ts":42, "act": "state_update", "state_id": 90, "h_ff": 3}
+{"ts": 42, "act": "evaluated_heuristics", "count": 1}
+{"ts": 42, "act": "generated_states", "state_id": 85, "op": "move_room shakey room2 room1 door2"}
+{"ts":42, "act": "state_update", "state_id": 90, "g": 19, "real_g": 19}
+{"ts":42, "act": "state_update", "state_id": 91, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "3(Atom is_object_gripped(toy2, gripper1))"}, "new_parent": [85, "move_room shakey room2 room3 door3", 1]}
+{"ts": 42, "act": "generated_states", "state_id": 85, "op": "move_room shakey room2 room3 door3"}
+{"ts":42, "act": "state_update", "state_id": 91, "g": -1, "real_g": -1}
+{"ts": 42, "act": "evaluated_states", "state_id": 91, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 42}
+{"ts":42, "act": "state_update", "state_id": 91, "h_ff": 3}
+{"ts": 42, "act": "evaluated_heuristics", "count": 1}
+{"ts":42, "act": "state_update", "state_id": 50, "new_parent": [85, "drop_object shakey toy2 gripper1 room2", 1]}
+{"ts": 42, "act": "generated_states", "state_id": 85, "op": "drop_object shakey toy2 gripper1 room2"}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 43}
+{"ts":43, "act": "state_update", "state_id": 88, "g": 19, "real_g": 19}
+{"ts": 43, "act": "expanded_states", "state_id": 88}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 43}
+{"ts":43, "act": "state_update", "state_id": 86, "new_parent": [88, "climb_box shakey box room1", 1]}
+{"ts": 43, "act": "generated_states", "state_id": 88, "op": "climb_box shakey box room1"}
+{"ts":43, "act": "state_update", "state_id": 86, "g": 18, "real_g": 18}
+{"ts":43, "act": "state_update", "state_id": 85, "new_parent": [88, "push_box shakey box room1 room2 door2", 1]}
+{"ts": 43, "act": "generated_states", "state_id": 88, "op": "push_box shakey box room1 room2 door2"}
+{"ts":43, "act": "state_update", "state_id": 92, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "3(Atom is_object_gripped(toy2, gripper1))"}, "new_parent": [88, "move_room shakey room1 room2 door1", 1]}
+{"ts": 43, "act": "generated_states", "state_id": 88, "op": "move_room shakey room1 room2 door1"}
+{"ts":43, "act": "state_update", "state_id": 92, "g": -1, "real_g": -1}
+{"ts": 43, "act": "evaluated_states", "state_id": 92, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 43}
+{"ts":43, "act": "state_update", "state_id": 92, "h_ff": 3}
+{"ts": 43, "act": "evaluated_heuristics", "count": 1}
+{"ts": 43, "act": "generated_states", "state_id": 88, "op": "move_room shakey room1 room2 door2"}
+{"ts":43, "act": "state_update", "state_id": 92, "g": 20, "real_g": 20}
+{"ts":43, "act": "state_update", "state_id": 93, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "0(Atom is_in(toy2, room1))"}, "new_parent": [88, "drop_object shakey toy2 gripper1 room1", 1]}
+{"ts": 43, "act": "generated_states", "state_id": 88, "op": "drop_object shakey toy2 gripper1 room1"}
+{"ts":43, "act": "state_update", "state_id": 93, "g": -1, "real_g": -1}
+{"ts": 43, "act": "evaluated_states", "state_id": 93, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 43}
+{"ts":43, "act": "state_update", "state_id": 93, "h_ff": 6}
+{"ts": 43, "act": "evaluated_heuristics", "count": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 44}
+{"ts":44, "act": "state_update", "state_id": 89, "g": 19, "real_g": 19}
+{"ts": 44, "act": "expanded_states", "state_id": 89}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 44}
+{"ts":44, "act": "state_update", "state_id": 87, "new_parent": [89, "climb_box shakey box room3", 1]}
+{"ts": 44, "act": "generated_states", "state_id": 89, "op": "climb_box shakey box room3"}
+{"ts":44, "act": "state_update", "state_id": 87, "g": 18, "real_g": 18}
+{"ts":44, "act": "state_update", "state_id": 85, "new_parent": [89, "push_box shakey box room3 room2 door3", 1]}
+{"ts": 44, "act": "generated_states", "state_id": 89, "op": "push_box shakey box room3 room2 door3"}
+{"ts":44, "act": "state_update", "state_id": 94, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "1(NegatedAtom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "3(Atom is_object_gripped(toy2, gripper1))"}, "new_parent": [89, "move_room shakey room3 room2 door3", 1]}
+{"ts": 44, "act": "generated_states", "state_id": 89, "op": "move_room shakey room3 room2 door3"}
+{"ts":44, "act": "state_update", "state_id": 94, "g": -1, "real_g": -1}
+{"ts": 44, "act": "evaluated_states", "state_id": 94, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 44}
+{"ts":44, "act": "state_update", "state_id": 94, "h_ff": 3}
+{"ts": 44, "act": "evaluated_heuristics", "count": 1}
+{"ts":44, "act": "state_update", "state_id": 95, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "2(Atom is_in(toy2, room3))"}, "new_parent": [89, "drop_object shakey toy2 gripper1 room3", 1]}
+{"ts": 44, "act": "generated_states", "state_id": 89, "op": "drop_object shakey toy2 gripper1 room3"}
+{"ts":44, "act": "state_update", "state_id": 95, "g": -1, "real_g": -1}
+{"ts": 44, "act": "evaluated_states", "state_id": 95, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 44}
+{"ts":44, "act": "state_update", "state_id": 95, "h_ff": 2}
+{"ts": 44, "act": "evaluated_heuristics", "count": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 45}
+{"ts":45, "act": "state_update", "state_id": 95, "g": 20, "real_g": 20}
+{"ts": 45, "act": "expanded_states", "state_id": 95}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 45}
+{"ts":45, "act": "state_update", "state_id": 96, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "2(Atom is_in(toy2, room3))"}, "new_parent": [95, "climb_box shakey box room3", 1]}
+{"ts": 45, "act": "generated_states", "state_id": 95, "op": "climb_box shakey box room3"}
+{"ts":45, "act": "state_update", "state_id": 96, "g": -1, "real_g": -1}
+{"ts": 45, "act": "evaluated_states", "state_id": 96, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 45}
+{"ts":45, "act": "state_update", "state_id": 96, "h_ff": 2}
+{"ts": 45, "act": "evaluated_heuristics", "count": 1}
+{"ts":45, "act": "state_update", "state_id": 97, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "2(Atom is_in(toy2, room3))"}, "new_parent": [95, "push_box shakey box room3 room2 door3", 1]}
+{"ts": 45, "act": "generated_states", "state_id": 95, "op": "push_box shakey box room3 room2 door3"}
+{"ts":45, "act": "state_update", "state_id": 97, "g": -1, "real_g": -1}
+{"ts": 45, "act": "evaluated_states", "state_id": 97, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 45}
+{"ts":45, "act": "state_update", "state_id": 97, "h_ff": 1}
+{"ts": 45, "act": "evaluated_heuristics", "count": 1}
+{"ts":45, "act": "state_update", "state_id": 98, "state": {"var0": "2(Atom is_in(box, room3))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "2(Atom is_in(toy2, room3))"}, "new_parent": [95, "move_room shakey room3 room2 door3", 1]}
+{"ts": 45, "act": "generated_states", "state_id": 95, "op": "move_room shakey room3 room2 door3"}
+{"ts":45, "act": "state_update", "state_id": 98, "g": -1, "real_g": -1}
+{"ts": 45, "act": "evaluated_states", "state_id": 98, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 45}
+{"ts":45, "act": "state_update", "state_id": 98, "h_ff": 1}
+{"ts": 45, "act": "evaluated_heuristics", "count": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 46}
+{"ts":46, "act": "state_update", "state_id": 97, "g": 21, "real_g": 21}
+{"ts": 46, "act": "expanded_states", "state_id": 97}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 46}
+{"ts":46, "act": "state_update", "state_id": 99, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "0(Atom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "1(Atom is_in(shakey, room2))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "2(Atom is_in(toy2, room3))"}, "new_parent": [97, "climb_box shakey box room2", 1]}
+{"ts": 46, "act": "generated_states", "state_id": 97, "op": "climb_box shakey box room2"}
+{"ts":46, "act": "state_update", "state_id": 99, "g": -1, "real_g": -1}
+{"ts": 46, "act": "evaluated_states", "state_id": 99, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 46}
+{"ts":46, "act": "state_update", "state_id": 99, "h_ff": 1}
+{"ts": 46, "act": "evaluated_heuristics", "count": 1}
+{"ts":46, "act": "state_update", "state_id": 100, "state": {"var0": "0(Atom is_in(box, room1))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "2(Atom is_in(toy2, room3))"}, "new_parent": [97, "push_box shakey box room2 room1 door2", 1]}
+{"ts": 46, "act": "generated_states", "state_id": 97, "op": "push_box shakey box room2 room1 door2"}
+{"ts":46, "act": "state_update", "state_id": 100, "g": -1, "real_g": -1}
+{"ts": 46, "act": "evaluated_states", "state_id": 100, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 46}
+{"ts":46, "act": "state_update", "state_id": 100, "h_ff": 0}
+{"ts": 46, "act": "evaluated_heuristics", "count": 1}
+{"ts":46, "act": "state_update", "state_id": 95, "new_parent": [97, "push_box shakey box room2 room3 door3", 1]}
+{"ts": 46, "act": "generated_states", "state_id": 97, "op": "push_box shakey box room2 room3 door3"}
+{"ts":46, "act": "state_update", "state_id": 101, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "0(Atom is_in(shakey, room1))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "2(Atom is_in(toy2, room3))"}, "new_parent": [97, "move_room shakey room2 room1 door1", 1]}
+{"ts": 46, "act": "generated_states", "state_id": 97, "op": "move_room shakey room2 room1 door1"}
+{"ts":46, "act": "state_update", "state_id": 101, "g": -1, "real_g": -1}
+{"ts": 46, "act": "evaluated_states", "state_id": 101, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 46}
+{"ts":46, "act": "state_update", "state_id": 101, "h_ff": 0}
+{"ts": 46, "act": "evaluated_heuristics", "count": 1}
+{"ts": 46, "act": "generated_states", "state_id": 97, "op": "move_room shakey room2 room1 door2"}
+{"ts":46, "act": "state_update", "state_id": 101, "g": 22, "real_g": 22}
+{"ts":46, "act": "state_update", "state_id": 102, "state": {"var0": "1(Atom is_in(box, room2))", "var1": "1(NegatedAtom is_on_box(shakey))", "var2": "0(Atom is_gripper_free(gripper1))", "var3": "0(Atom is_gripper_free(gripper2))", "var4": "2(Atom is_in(shakey, room3))", "var5": "1(NegatedAtom is_light_on(lightswitch1))", "var6": "1(NegatedAtom is_light_on(lightswitch2))", "var7": "1(NegatedAtom is_light_on(lightswitch3))", "var8": "2(Atom is_in(toy1, room3))", "var9": "2(Atom is_in(toy2, room3))"}, "new_parent": [97, "move_room shakey room2 room3 door3", 1]}
+{"ts": 46, "act": "generated_states", "state_id": 97, "op": "move_room shakey room2 room3 door3"}
+{"ts":46, "act": "state_update", "state_id": 102, "g": -1, "real_g": -1}
+{"ts": 46, "act": "evaluated_states", "state_id": 102, "preferred": 0}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 46}
+{"ts":46, "act": "state_update", "state_id": 102, "h_ff": 2}
+{"ts": 46, "act": "evaluated_heuristics", "count": 1}
+{"act": "end_group"}
+{"act": "begin_group", "ts": 47}
+{"ts":47, "act": "state_update", "state_id": 100, "g": 22, "real_g": 22}
+{"ts": 47, "act": "expanded_states", "state_id": 100}
+{"act": "end_group"}
+{"ts": 47, "act": "plan_found", "state_ids": [0, 1, 5, 12, 20, 23, 30, 31, 33, 37, 48, 49, 52, 59, 62, 68, 72, 84, 85, 89, 95, 97, 100]}
