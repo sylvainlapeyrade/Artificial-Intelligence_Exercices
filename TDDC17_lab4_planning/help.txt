@@ -1,7 +1,0 @@
-https://www.ida.liu.se/~TDDC17/info/labs/lab4/lab4_planning.en.shtml
-https://github.com/holmgr/tddc17/blob/master/lab4/lab4-report.pdf
-https://github.com/ArnaudPec/TDDC17/blob/master/lab4/shakey.pddl
-https://github.com/ArnaudPec/TDDC17/blob/master/lab4/report/TDDC17_Lab_4_Pecoraro_Arnaud.pdf
-https://github.com/Martinhinnerson/TDDC17/blob/master/lab4_workspace/TDDC17_Lab4.pdf
-https://github.com/oscpe262/TDDC17/blob/master/labs/lab4/report.pdf
-https://github.com/guillaume-chevalier/AI-Planning-Solver-Shakeys-World-PDDL
