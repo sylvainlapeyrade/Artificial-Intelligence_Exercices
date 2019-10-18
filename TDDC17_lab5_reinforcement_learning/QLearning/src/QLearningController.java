@@ -3,6 +3,8 @@ import java.text.NumberFormat;
 import java.util.Hashtable;
 import java.util.Locale;
 import java.util.Random;
+// Import IO
+import java.io.*;
 
 /* TODO: 
  * -Define state and reward functions (StateAndReward.java) suitable for your problem 
@@ -11,6 +13,12 @@ import java.util.Random;
  * -Tune state and reward function, and parameters below if the result is not satisfactory */
 
 public class QLearningController extends Controller {
+
+	// Member variables in QLearningController
+	TestPairs pairs = new TestPairs();
+	double sumReward = 0.0;
+	int nrTicks = 0;
+	int nrWrites = 0;
 	
 	/* These are the agents senses (inputs) */
 	DoubleFeature x; /* Positions */
@@ -24,7 +32,7 @@ public class QLearningController extends Controller {
 	RocketEngine middleEngine;
 	RocketEngine rightEngine;
 
-	final static int NUM_ACTIONS = 7; /* The takeAction function must be changed if this is modified */
+	final static int NUM_ACTIONS = 4; /* The takeAction function must be changed if this is modified */
 	
 	/* Keep track of the previous state and action */
 	String previous_state = null;
@@ -86,10 +94,45 @@ public class QLearningController extends Controller {
 	void performAction(int action) {
 
 		/* Fire zeh rockets! */
-		/* TODO: Remember to change NUM_ACTIONS constant to reflect the number of actions (including 0, no action) */
-		
+		/* TODO: Remember to change NUM_ACTIONS constant to reflect the number
+		 of actions (including 0, no action) */
+
 		/* TODO: IMPLEMENT THIS FUNCTION */
-		
+
+		resetRockets();
+
+		switch (action) {
+		case 0: // Middle
+			middleEngine.setBursting(true);
+			break;
+		case 1: // Right
+			leftEngine.setBursting(true);
+			break;
+		case 2: // Left
+			rightEngine.setBursting(true);
+			break;
+		case 3: // None
+			resetRockets();
+			break;
+		//  case 4: // Left Midlle
+		//  	rightEngine.setBursting(true);
+		// 	middleEngine.setBursting(true);
+		// 	break;
+		//  case 5: // Right Midlle
+		//  	leftEngine.setBursting(true);
+		// 	middleEngine.setBursting(true);
+		// 	break;
+		}
+
+	}
+	
+	public void writeToFile(String filename, String content) {
+		try {
+			FileOutputStream fos = new FileOutputStream(filename);
+			fos.write(content.getBytes());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	/* Main decision loop. Called every iteration by the simulator */
@@ -97,14 +140,16 @@ public class QLearningController extends Controller {
 		iteration++;
 		
 		if (!paused) {
-			String new_state = StateAndReward.getStateAngle(angle.getValue(), vx.getValue(), vy.getValue());
+			// String new_state = StateAndReward.getStateAngle(angle.getValue(), vx.getValue(), vy.getValue());
+			String new_state = StateAndReward.getStateHover(angle.getValue(), vx.getValue(), vy.getValue());
 
 			/* Repeat the chosen action for a while, hoping to reach a new state. This is a trick to speed up learning on this problem. */
 			action_counter++;
 			if (new_state.equals(previous_state) && action_counter < REPEAT_ACTION_MAX) {
 				return;
 			}
-			double previous_reward = StateAndReward.getRewardAngle(previous_angle, previous_vx, previous_vy);
+			// double previous_reward = StateAndReward.getRewardAngle(previous_angle, previous_vx, previous_vy);
+			double previous_reward = StateAndReward.getRewardHover(previous_angle, previous_vx, previous_vy);
 			action_counter = 0;
 
 			/* The agent is in a new state, do learning and action selection */
@@ -121,33 +166,55 @@ public class QLearningController extends Controller {
 				/* Update Q value */
 				if (Qtable.get(prev_stateaction) == null) {
 					Qtable.put(prev_stateaction, 0.0);
-				} 
+				}
 
-				
 				/* TODO: IMPLEMENT Q-UPDATE HERE! */
-				
+
 				/* See top for constants and below for helper functions */
-				
-				
+				/* Implementation according to the book */
+
+				double qvalue = Qtable.get(prev_stateaction) + alpha(Ntable.get(prev_stateaction)) * (previous_reward
+						+ GAMMA_DISCOUNT_FACTOR * getMaxActionQValue(new_state) - Qtable.get(prev_stateaction));
+				Qtable.put(prev_stateaction, qvalue);
+
 				int action = selectAction(new_state); /* Make sure you understand how it selects an action */
 
 				performAction(action);
-				
+
 				/* Only print every 10th line to reduce spam */
 				print_counter++;
 				if (print_counter % 10 == 0) {
-					System.out.println("ITERATION: " + iteration + " SENSORS: a=" + df.format(angle.getValue()) + " vx=" + df.format(vx.getValue()) + 
-							" vy=" + df.format(vy.getValue()) + " P_STATE: " + previous_state + " P_ACTION: " + previous_action + 
-							" P_REWARD: " + df.format(previous_reward) + " P_QVAL: " + df.format(Qtable.get(prev_stateaction)) + " Tested: "
-							+ Ntable.get(prev_stateaction) + " times.");
+					System.out.println("ITERATION: " + iteration + " SENSORS: a=" + df.format(angle.getValue()) + " vx="
+							+ df.format(vx.getValue()) + " vy=" + df.format(vy.getValue()) + " P_STATE: "
+							+ previous_state + " P_ACTION: " + previous_action + " P_REWARD: "
+							+ df.format(previous_reward) + " P_QVAL: " + df.format(Qtable.get(prev_stateaction))
+							+ " Tested: " + Ntable.get(prev_stateaction) + " times.");
 				}
-				
+
 				previous_vy = vy.getValue();
 				previous_vx = vx.getValue();
 				previous_angle = angle.getValue();
 				previous_action = action;
 			}
 			previous_state = new_state;
+		}
+		
+		double currentReward = StateAndReward.getRewardHover(angle.getValue(), vx.getValue(), vy.getValue());
+		int nrTicksBeforeStat = 10000; // An example
+		if (nrTicks >= nrTicksBeforeStat) {
+			TestPair p = new TestPair(nrTicksBeforeStat * nrWrites, (sumReward / nrTicksBeforeStat));
+			pairs.addPair(p);
+			try {
+				writeToFile("output.m", pairs.getMatlabString("steps", "result"));
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			sumReward = currentReward;
+			nrTicks = 0;
+			nrWrites++;
+		} else {
+			nrTicks++;
+			sumReward += currentReward;
 		}
 
 	}
