@@ -1,25 +1,27 @@
 public class StateAndReward {
 
-	// Member variables in QLearningController
-	TestPairs pairs = new TestPairs();
-	double sumReward = 0.0;
-	int nrTicks = 0;
-	int nrWrites = 0;
-
 	/* Angle properties */
 	private static final int angle_state = 20;
 	private static final double min_angle = -Math.PI / 5;
 	private static final double max_angle = Math.PI / 5;
+	// private static final double min_angle = -Math.PI;
+	// private static final double max_angle = Math.PI;
 
 	/* Velocity X properties */
 	private static final int velocityX_state = 5;
 	private static final double min_velocityX = -0.5;
 	private static final double max_velocityX = 0.5;
+	// private static final int velocityX_state = 10;
+	// private static final double min_velocityX = -20;
+	// private static final double max_velocityX = 20;
 
 	/* Velocity Y properties */
 	private static final int velocityY_state = 10;
 	private static final double min_velocityY = -0.5;
 	private static final double max_velocityY = 0.5;
+	// private static final int velocityY_state = 20;
+	// private static final double min_velocityY = -20;
+	// private static final double max_velocityY = 20;
 
 	/* State discretization function for the angle controller */
 	public static String getStateAngle(double angle, double vx, double vy) {
@@ -56,7 +58,7 @@ public class StateAndReward {
 
 		/* TODO: IMPLEMENT THIS FUNCTION */
 		double angle_reward = getRewardAngle(angle, vx, vy) / Math.PI;
-		double hover_reward = (20 - Math.abs(vx) + 20 - Math.abs(vy)) / 40; 
+		double hover_reward = (20 - Math.abs(vx) + 20 - Math.abs(vy)) / 40;
 
 		return angle_reward + hover_reward;
 	}
