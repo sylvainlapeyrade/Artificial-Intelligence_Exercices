@@ -1,9 +1,9 @@
-# TDDC17-Artificial-Intelligence_Labs
-Labs implementation for the Artificial Intelligence course TDDC17 in Linköping University.
+# Artificial-Intelligence_Exercices
+Artificial Intelligence exercices including:
 
-* **Lab1** - Intelligent Agents
-* **Lab2** - Search
-* **Lab3** - Bayesian Networks
-* **Lab4** - Planning
-* **Lab5** - Reinforcement Learning
-* **Lab6** - Machine Learning
+* **1** - Intelligent Agents
+* **2** - Search
+* **3** - Bayesian Networks
+* **4** - Planning
+* **5** - Reinforcement Learning (Q-Learning)
+* **6** - Machine Learning
